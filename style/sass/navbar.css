@@ -8,6 +8,7 @@
 
 header {
   display: block;
+  position: absolute;
   width: 100%;
   font-size: 14px;
   z-index: 200;
@@ -18,7 +19,8 @@ header {
   position: relative;
   margin: auto;
   color: #b9874c;
-  font-family: 'Josefin Sans', Arial, sans-serif; }
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  background-color: pink; }
   .navigation a {
     color: #b9874c;
     text-decoration: none;
@@ -29,7 +31,11 @@ header {
 .logo {
   position: relative;
   display: inline-block;
-  text-transform: uppercase; }
+  font-family: 'Playfair Display SC', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: -15px; }
 
 .navigation-list {
   position: relative;
@@ -46,10 +52,10 @@ header {
 
 .hamburger {
   display: none;
-  position: relative;
   color: #b9874c;
-  font-size: 20px;
-  padding: 20px 20px 0 0;
+  font-size: 25px;
+  line-height: 0px;
+  padding: 0 15px 0 0;
   float: right;
   text-align: right;
   z-index: 300; }
@@ -62,25 +68,24 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  line-height: 0;
-  margin-top: 100px;
+  margin-top: 41px;
   text-align: center;
-  z-index: 200; }
+  z-index: 200;
+  background-color: rgba(255, 255, 255, 0.5); }
   .drop-menu ul {
-    background-color: green;
     list-style: none;
     padding-left: 0; }
     .drop-menu ul li {
-      padding-top: 10px; }
+      padding-top: 20px; }
     .drop-menu ul a {
       text-decoration: none;
-      font-size: 12px;
+      font-size: 14px;
       text-transform: uppercase;
-      color: black; }
+      color: #b9874c; }
       .drop-menu ul a:hover {
-        color: black; }
+        color: #b9874c; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .navigation {
     width: 100%; }
     .navigation .navigation-list {

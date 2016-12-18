@@ -2,6 +2,7 @@
 
 header {
     display: block;
+    position: absolute;
     width: 100%;
     font-size: 14px;
     z-index: 200;
@@ -14,7 +15,6 @@ header {
     position: relative;
     margin: auto;
     color: $gold;
-    //background-color: pink;
     font-family: 'Josefin Sans', Arial, sans-serif;
     a {
         color: $gold;
@@ -29,7 +29,11 @@ header {
 .logo {
     position: relative;
     display: inline-block;
+    font-family: 'Playfair Display SC', serif;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: -15px;
 }
 
 .navigation-list {
@@ -51,10 +55,11 @@ header {
 
 .hamburger {
     display: none;
-    position: relative;
+    //position: relative;
     color: $gold;
-    font-size: 20px;
-    padding: 20px 20px 0 0;
+    font-size: 25px;
+    line-height: 0px;
+    padding: 0 15px 0 0;
     float: right;
     text-align: right;
     z-index: 300;
@@ -69,30 +74,29 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    line-height: 0;
-    margin-top: 100px;
+    margin-top: 41px;
     text-align: center;
     z-index: 200;
+    background-color: rgba(255,255,255,0.5);
     ul {
-        background-color: green;
         list-style:none;
-        padding-left:0;
+        padding-left: 0;
         li {
-        padding-top: 10px ;
+            padding-top: 20px ;
         }
         a {
-        text-decoration: none;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: black;
-        &:hover {
-            color: black;
-        }
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $gold;
+            &:hover {
+                color: $gold;
+            }
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .navigation {
         width: 100%;
         .navigation-list {
