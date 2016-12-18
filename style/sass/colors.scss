@@ -1,0 +1,11 @@
+$gold: #b9874c;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
