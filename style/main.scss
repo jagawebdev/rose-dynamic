@@ -41,6 +41,10 @@ button {
     font-weight: bold;
 }
 
+.gold {
+    color: $gold;
+}
+
 // .row.match-my-cols {
 //     overflow: hidden; 
 // }
@@ -93,7 +97,7 @@ button {
 
 // ======== COUNT DOWN ========= //
 #count-down {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     text-align: center;
     font-family: 'Josefin Sans', Arial, sans-serif;
     color: $gold;
@@ -111,11 +115,15 @@ button {
 }
 
 // ======== WEDDING, DESTINATION, RESERVATION INFO ========= //
+#sample-info {
+    padding: 30px;  
+}
+
 .sample-info-pic img {
-        width: 100%;
-        height: auto;
-        outline: 1px solid $gold;
-        outline-offset: -20px;
+    width: 100%;
+    height: auto;
+    outline: 1px solid $gold;
+    outline-offset: -20px;
 }
 
 .sample-info-text {
@@ -125,12 +133,13 @@ button {
 
 // ======== RSVP MODAL ========= //
 form .row {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 form button {
     margin-left: 15px;
 }
+
 label {
     display: block;
     font-family: 'Josefin Sans', Arial, sans-serif;
@@ -141,7 +150,12 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+input[type="password"],
+input[type="search"],
+textarea {
     color: #666;
     border-bottom: solid 1px $gold;
     border-left: solid 1px $gold;
@@ -178,4 +192,133 @@ input[type="email"] {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    &:focus {
+        border: solid 1px $gold;
+    }
 }
+
+// ======== FOOTER ========= //
+footer {
+    background-color: black;
+    padding: 50px 0;
+    color: rgba(255,255,255,0.9)!important;
+    margin-top: 30px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+footer h4, h5, {
+    color: $gold;
+}
+
+footer h6 {
+    color: rgba(255,255,255,0.9);
+}
+
+footer a {
+    color: $gold;
+    text-decoration: underline;
+    &:hover {
+        color: $gold;
+    }
+}
+
+footer .agent-info {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+footer ul {
+    list-style:none;
+    padding-left: 0;
+}
+    
+footer form button {
+    margin-left: 0;
+}
+
+footer .form-group textarea, .form-group input {
+    background-color: rgba(0,0,0,0.0);
+}
+
+// ======== SITE FOOTER ========= //
+.site-footer {
+    border-top: solid 1px $gold;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.social-list ul {
+    text-decoration: none;
+}
+
+.social-list ul a {
+    color: white;
+    font-size: 20px;
+    border: solid 1px $gold;
+    border-radius: 100%;
+    padding: 6px 12px 4px ;
+    background-color: $gold;
+    &:hover {
+        background-color: rgba(0,0,0,0.0);
+        color: $gold;
+    }
+}
+
+// ======== FIXED FOOTER ========= //
+#fixed-footer {
+    display: inline-block !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float: right;
+    margin: auto 15px 15px auto;
+    border: $gold 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    h6 {
+        color: $gold;
+    }
+}
+
+.agent-cta-title {
+    width: 100%;
+    background-color: $gold;
+    border-radius: 6px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.agent-cta-info {
+    padding: 0 10px;
+}
+
+.agent-cta-title h6 {
+    color: white !important;
+    font-weight: bold;
+}
+
+
+
+// #fixed-footer h6 {
+//     color: $gold;
+// }
+
+// #fixed-footer .agent-cta-title {
+//     width: 100%;
+//     background-color: $gold;
+// }
+
+// .agent-cta-title h6 {
+//     color: white;
+//     font-weight: bold;
+//     text-align: center;
+// }

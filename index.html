@@ -42,7 +42,7 @@
                         <li><a href="#">Wedding</a></li>
                         <li><a href="#">Destination</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Faqs</a></li>
+                        <li><a href="#">Faq</a></li>
                         <li><a href="#"><button class="book-now">Book Now!</button></a></li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                                 <li><a href="#" class="drop-link">Wedding</a></li>
                                 <li><a href="#" class="drop-link">Destination</a></li>
                                 <li><a href="#" class="drop-link">Contact</a></li>
-                                <li><a href="#" class="drop-link">Faqs</a></li>
+                                <li><a href="#" class="drop-link">Faq</a></li>
                                 <li><a href="#" class="drop-link bold">Book Now!</a></li>
                             </ul>
                         </div>
@@ -178,35 +178,112 @@
 	</section>
 
 	<!-- FOOTER ====================================== -->
-	<!--<footer>-->
-	<!--	<div class="container">-->
-	<!--		<div class="row">-->
-	<!--			<div class="col-sm-3">-->
-	<!--				<p><a href="/"><img src="assets/img/logo.png" alt="Bootsrap to wordpress"></a></p>-->
-	<!--			</div>-->
-				
-	<!--			<div class="col-sm-6">-->
-	<!--				<nav>-->
-	<!--					<ul class="list-unstiled list-inline">-->
-	<!--						<li><a href="#">Home</a></li>-->
-	<!--						<li><a href="#">Blog</a></li>-->
-	<!--						<li><a href="#">Resources</a></li>-->
-	<!--						<li><a href="#">Contact</a></li>-->
-	<!--						<li class="signup-link"><a href="#">Sign up now</a></li>-->
-	<!--					</ul>-->
-	<!--				</nav>-->
-	<!--			</div>-->
-				
-	<!--			<div class="col-sm-3">-->
-	<!--				<p class="pull-right">&copy; Lorem Ipsum</p>-->
-	<!--			</div>-->
-	<!--		</div>-->
-	<!--	</div>-->
-	<!--</footer>-->
+	<footer>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-4">
+	                <h5>Questions? Please contact the agent</h5>
+	                <ul class="agent-info">
+                        <li>Joanna Drake</li>
+                        <li>Phone: 345.345.3444</li>
+                        <li>Text: 345.345.3333</li>
+                        <li>Email: joanna@travelzap.com</li>
+                    </ul>
+	                
+	            </div>
+	            <div class="col-sm-4">
+	                <h5>Contact</h5>
+	                <h6>We are here to help! Check out our <a href="#">FAQ Page</a> or send 
+                        us a message and we'll respond as soon as we can. </h6>
+                        
+					<form method="post" class="form-horizontal contact-form" action="php/contact/contact.php">
+						<!-- Honeypot SPAM Protection -->
+						<input type="text" name="cf[honeypot]" style="display: none">
+						<!-- END Honeypot SPAM Protection -->
+
+						<div class="form-group">
+							<div class="col-md-6">
+								<input type="text" name="cf[name]" class="form-control required" placeholder="Your Name">
+							</div>
+							<div class="col-md-6">
+								<input type="email" name="cf[email]" class="form-control required email" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-6">
+								<input type="phone" name="cf[phone]" class="form-control number" placeholder="Your Phone #">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<button type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
+	            </div>
+	            
+	            <div class="col-sm-3 col-sm-offset-1">
+	                <h5>Menu</h5>
+	                <ul>
+                        <li><a href="#" class="drop-link">Home</a></li>
+                        <li><a href="#" class="drop-link">Wedding</a></li>
+                        <li><a href="#" class="drop-link">Destination</a></li>
+                        <li><a href="#" class="drop-link">Contact</a></li>
+                        <li><a href="#" class="drop-link">Faq</a></li>
+                        <li><a href="#" class="drop-link bold">Book Now!</a></li>
+                    </ul>
+	            </div>
+	        </div>
+	        
+	        <div class="row site-footer">
+        	        <div class="col-sm-4">
+        				Created by <a href="http://travelzap.com" target="_blank">Travel Zap Inc.</a>
+        			</div>
+        			
+        			<div class="col-sm-4">
+        				 <span class="gold">$150 off</span> for your next group vacation. Discount code #45454545. </br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here. </a>
+        			</div>
+        
+        			<div class="col-sm-3 col-sm-offset-1 social-list ">
+        				<ul class="list-inline">
+        					<li><a href="https://www.facebook.com/TravelZapInc" target="_blank"><i class="ion-social-facebook"></i></a></li>
+        					<li><a href="https://twitter.com/Travel_Zap" target="_blank"><i class="ion-social-tumblr"></i></a></li>
+        				</ul>
+        			</div>
+	        </div>
+	    </div>
+	</footer>
+	
+	<!-- FIXED FOOTER ====================================== -->
+	<section id="fixed-footer">
+	    <div  class="agent-cta">
+	        <div class="agent-cta-title">
+	            <h6>Questions?</h6>
+	        </div>
+	        
+	        <div class="agent-cta-info">
+    	        <h6>Contact the agent</h6>
+                <ul>
+                    <li>Joanna Drake</li>
+                    <li>Phone: 456.456.4555</li>
+                    <li>Text: 333.444.6666</li>
+                    <li>joanna@travelzap.com</li>
+                </ul>
+            </div>
+        </div>
+	</section>
 	
 	<!-- RSVP MODAL ====================================== -->
 	<div class="modal fade" id="rsvpModal">
-		 <div class="modal-dialog">
+		 <div class="modal-dialog modal-sm">
 		 	<div class="modal-content">
 		 		<div class="modal-header">
 		 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="close-button">&times;</span>
