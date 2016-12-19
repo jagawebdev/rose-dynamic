@@ -7,20 +7,49 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-// ======== Global========= //
-button {
-    font-family: 'Josefin Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: solid 1px $gold;
-    border-radius: 5px;
-    padding: 5px 10px 3px 10px;
-    background-color: rgba(0,0,0,0.0);
+body.modal-open {
+    overflow: visible;
 }
 
-.book-now {
+// ======== Global========= //
+h1, h2, h3 {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: $gold;
+    text-transform: uppercase;
+}
+
+h4, h5, h6 {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+button {
+    position: relative;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    border: solid 1px $gold;
+    padding: 5px 10px 3px 10px;
+    background-color: $gold;
+    overflow: hidden;
+    color: white;
+    &:hover {
+        color: $gold;
+        background-color: rgba(0,0,0,0.0);
+    }
+}
+
+.bold {
     font-weight: bold;
 }
+
+// .row.match-my-cols {
+//     overflow: hidden; 
+// }
+
+// .row.match-my-cols [class*="col-"]{
+//     margin-bottom: -99999px;
+//     padding-bottom: 99999px;
+// }
+
 
 // ======== Hero ========= //
 #hero {
@@ -79,4 +108,74 @@ button {
 
 #count-down  .number {
     font-size: 50px;
+}
+
+// ======== WEDDING, DESTINATION, RESERVATION INFO ========= //
+.sample-info-pic img {
+        width: 100%;
+        height: auto;
+        outline: 1px solid $gold;
+        outline-offset: -20px;
+}
+
+.sample-info-text {
+    padding: 60px;
+}
+
+
+// ======== RSVP MODAL ========= //
+form .row {
+    margin: 15px 0;
+}
+
+form button {
+    margin-left: 15px;
+}
+label {
+    display: block;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $gold;
+}
+
+input[type="text"],
+input[type="email"] {
+    color: #666;
+    border-bottom: solid 1px $gold;
+    border-left: solid 1px $gold;
+    border-top: none;
+    border-right: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    &:focus {
+        border-bottom: solid 1px $gold;
+        border-left: solid 1px $gold;
+        border-top: none;
+        border-right: none;
+    }
+}
+
+.close-button {
+    font-size: 80px;
+    color: $gold;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+
+.form-control {
+    border: $gold 1px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
 }

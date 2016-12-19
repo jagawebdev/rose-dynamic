@@ -470,16 +470,32 @@ header {
 body {
   font-family: 'Roboto', Helvetica, sans-serif; }
 
-button {
+body.modal-open {
+  overflow: visible; }
+
+h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
-  font-weight: bold;
+  color: #b9874c;
+  text-transform: uppercase; }
+
+h4, h5, h6 {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  text-transform: uppercase; }
+
+button {
+  position: relative;
+  font-family: 'Josefin Sans', Arial, sans-serif;
   text-transform: uppercase;
   border: solid 1px #b9874c;
-  border-radius: 5px;
   padding: 5px 10px 3px 10px;
-  background-color: transparent; }
+  background-color: #b9874c;
+  overflow: hidden;
+  color: white; }
+  button:hover {
+    color: #b9874c;
+    background-color: transparent; }
 
-.book-now {
+.bold {
   font-weight: bold; }
 
 #hero {
@@ -529,5 +545,64 @@ button {
 
 #count-down .number {
   font-size: 50px; }
+
+.sample-info-pic img {
+  width: 100%;
+  height: auto;
+  outline: 1px solid #b9874c;
+  outline-offset: -20px; }
+
+.sample-info-text {
+  padding: 60px; }
+
+form .row {
+  margin: 15px 0; }
+
+form button {
+  margin-left: 15px; }
+
+label {
+  display: block;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b9874c; }
+
+input[type="text"],
+input[type="email"] {
+  color: #666;
+  border-bottom: solid 1px #b9874c;
+  border-left: solid 1px #b9874c;
+  border-top: none;
+  border-right: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-bottom: solid 1px #b9874c;
+    border-left: solid 1px #b9874c;
+    border-top: none;
+    border-right: none; }
+
+.close-button {
+  font-size: 80px;
+  color: #b9874c;
+  font-weight: 100;
+  line-height: 25px; }
+
+.form-control {
+  border: #b9874c 1px solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
 
 /*# sourceMappingURL=main.css.map */

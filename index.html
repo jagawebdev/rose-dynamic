@@ -56,7 +56,7 @@
                                 <li><a href="#" class="drop-link">Destination</a></li>
                                 <li><a href="#" class="drop-link">Contact</a></li>
                                 <li><a href="#" class="drop-link">Faqs</a></li>
-                                <li><a href="#" class="drop-link book-now">Book Now!</a></li>
+                                <li><a href="#" class="drop-link bold">Book Now!</a></li>
                             </ul>
                         </div>
                    </div>
@@ -104,22 +104,78 @@
 	    </div>
 	</section>
 	
-	<!-- RSVP section ====================================== -->
-	<!--<section id="optin">-->
-	<!--	<div class="container">-->
-	<!--		<div class="row">-->
-	<!--			<div class="col-sm-8">-->
-	<!--				<p class="lead"><strong>Subscribe to our mailing list.</strong> -->
-	<!--				We'll send something special as a thank you.</p>-->
-	<!--			</div>-->
-	<!--			<div class="col-sm-4">-->
-	<!--				<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">-->
-	<!--					Click here to subscribe</button>-->
-	<!--			</div>-->
-	<!--		</div>-->
-	<!--	</div>-->
-		
-	<!--</section>-->
+	<!-- WEDDING INFO ====================================== -->
+	<section id="sample-info">
+	    <div class="container">
+	        <div class="row match-my-cols">
+	            <div class="col-sm-6 sample-info-pic">
+	                <img src="assets/img/couple-sm.jpg"/>
+	            </div>
+	            
+	            <div class="col-sm-6 sample-info-text">
+	                <h2>Wedding</h2>
+	                <p>We joyfully request the pleasure of your company 
+	                as we speak our vows and join in marriage in the 
+	                presence of family and friends on October 23, 2017 
+	                at Excellence Punta Cana in Punta Cana, Dominican 
+	                Republic! We truly hope you can join our family in 
+	                this special celebration by booking below.</p>
+	                
+	                <a href="#"><button>book now!</button></a>
+	                <button data-toggle="modal" data-target="#rsvpModal">rsvp</button>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	
+	<!-- DESTINATION INFO ====================================== -->
+	<section id="sample-info">
+	    <div class="container">
+	        <div class="row match-my-cols">
+	            <div class="col-sm-6 sample-info-text">
+	                <h2>destination</h2>
+	                <h4>Excellence punta cana</h4>
+                    <h4>Punta cana, Dominican Republic</h4>
+	                <p>Featuring a unique pool that winds around the resort, 
+	                the Excellence Punta Cana is ready to surprise you with 
+	                its many wonders! Name Brand amenities are included with 
+	                all packages as well as access to an excellent spa, one 
+	                of the best in the Dominican Republic. This Adults only 
+	                property is the perfect place for you to spend some time 
+	                with a loved one or reconnect with your inner spirit. 
+	                Come relax with Excellence soon!</p>
+	            </div>
+	            
+	            <div class="col-sm-6 sample-info-pic">
+	                <img src="assets/img/hotel_pic.jpg"/>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	
+	<!-- BOOKING INFO ====================================== -->
+	<section id="sample-info">
+	    <div class="container">
+	        <div class="row match-my-cols">
+	            <div class="col-sm-6 sample-info-pic">
+	                <img src="assets/img/room_pic.jpg"/>
+	            </div>
+	            
+	            <div class="col-sm-6 sample-info-text">
+	                <h2>reservations</h2>
+	                <p>We have hired a booking agent to make your travel 
+	                planning easy. In order to be considered part of our 
+	                wedding group, please fill out the below forms and our 
+	                agent, Joanna, will contact you to confirm your stay.</br></br>
+                    The packages are All Inclusive, with Round-trip Hotel 
+                    Shuttle, unlimited dining, beverages (alcoholic & non-alcoholic), 
+                    activities, entertainment, taxes and fees.</p>
+	                
+	                <a href="#"><button>book now!</button></a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
 
 	<!-- FOOTER ====================================== -->
 	<!--<footer>-->
@@ -149,40 +205,64 @@
 	<!--</footer>-->
 	
 	<!-- RSVP MODAL ====================================== -->
-	<!--<div class="modal fade" id="myModal">-->
-	<!--	 <div class="modal-dialog">-->
-	<!--	 	<div class="modal-content">-->
-	<!--	 		<div class="modal-header">-->
-	<!--	 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>-->
-	<!--	 			<span class="sr-only">Close</span></button>-->
-	<!--	 			<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to Our Mailing List</h4>-->
-	<!--	 		</div>-->
-	<!--	 		<div class="modal-body">-->
-	<!--	 			<p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our-->
-	<!--	 			best-selling courses, <em>for free!</em></p>-->
-	<!--	 			<form class="form-inline" role="form">-->
+	<div class="modal fade" id="rsvpModal">
+		 <div class="modal-dialog">
+		 	<div class="modal-content">
+		 		<div class="modal-header">
+		 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="close-button">&times;</span>
+		 			<span class="sr-only">Close</span></button>
+		 			<h2 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> rsvp</h2>
+		 		</div>
+		 		<div class="modal-body">
+		 			<form class="form-inline" role="form">
+		 				<div class="row">
+    		 				<div class="form-group col-xs-12">
+    							<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name">
+    		 				</div>
+		 				</div>
 		 				
-	<!--	 				<div class="form-group">-->
-	<!--	 					<label class="sr-only" for="subscribe-name"> Your first name</label>-->
-	<!--	 					<input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">-->
-	<!--	 				</div>-->
+		 				<div class="row">
+    		 				<div class="form-group col-xs-12">
+    		 					<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email">
+    		 				</div>
+		 				</div>
 		 				
-	<!--	 				<div class="form-group">-->
-	<!--	 					<label class="sr-only" for="subscribe-email"> and your email</label>-->
-	<!--	 					<input type="text" class="form-control" id="subscribe-email" placeholder="and your email">-->
-	<!--	 				</div>-->
-	<!--	 				<input type="submit" class="btn btn-danger" value="Subscribe!">-->
-	<!--	 			</form>-->
-		 
-	<!--	 			<hr>-->
-	<!--	 			<p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters.-->
-	<!--	 			<br/> No Spam. Just good stuff. We respect your privacy &amp; you may unsubsribe at any time.</small></p>-->
-	<!--	 		</div>-->
-	<!--	 	</div>-->
-	<!--	 </div>-->
-	<!--</div>-->
-	
-	
+		 				<div class="row">
+    		 				<div class="form-group col-xs-12">
+    		 				    <input type="text" class="form-control" id="inputPhone" name="inputPhone" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number." placeholder="Your Phone Number">
+    		 				</div>
+		 				</div>
+		 				
+		 				<div class="row">
+		 				<div id="guests-group" class="form-group col-xs-5">
+							<label for="selectGuests">Guests</label>
+							<select class="form-control" name="selectGuests" id="selectGuests">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+							</select>
+						</div>
+						
+    						<div id="attending-group" class="form-group col-xs-7">
+    							<label for="selectAttending">I am attending...</label>
+    							<select class="form-control" name="selectAttending" id="selectAttending">
+    								<option value="Yes" selected>Yes</option>
+    								<option value="No">No</option>
+    							</select>
+    						</div>
+						</div>
+		 				
+		 				<button type="submit">Submit</button>
+		 			</form>
+		 			
+		 			<hr>
+		 		</div>
+		 	</div>
+		 </div>
+	</div>
 	
 	<!-- THIRD PARTY JS-->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
