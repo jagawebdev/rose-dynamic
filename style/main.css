@@ -470,9 +470,6 @@ header {
 body {
   font-family: 'Roboto', Helvetica, sans-serif; }
 
-body.modal-open {
-  overflow: visible; }
-
 h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
   color: #b9874c;
@@ -688,8 +685,7 @@ footer .form-group textarea, .form-group input {
   margin: auto 15px 15px auto;
   border: #b9874c 1px solid;
   border-radius: 10px;
-  background-color: white;
-  font-family: 'Josefin Sans', Arial, sans-serif; }
+  background-color: white; }
   #fixed-footer ul {
     list-style: none;
     padding: 0; }
@@ -700,7 +696,7 @@ footer .form-group textarea, .form-group input {
   width: 100%;
   background-color: #b9874c;
   border-radius: 6px;
-  padding: 10px 0;
+  padding: 7px 0;
   text-align: center; }
 
 .agent-cta-info {
@@ -708,6 +704,7 @@ footer .form-group textarea, .form-group input {
 
 .agent-cta-title h6 {
   color: white !important;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,10 +7,6 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-body.modal-open {
-    overflow: visible;
-}
-
 // ======== Global========= //
 h1, h2, h3 {
     font-family: 'Josefin Sans', Arial, sans-serif;
@@ -22,6 +18,7 @@ h4, h5, h6 {
     font-family: 'Josefin Sans', Arial, sans-serif;
     text-transform: uppercase;
 }
+
 button {
     position: relative;
     font-family: 'Josefin Sans', Arial, sans-serif;
@@ -279,7 +276,6 @@ footer .form-group textarea, .form-group input {
     border: $gold 1px solid;
     border-radius: 10px;
     background-color: white;
-    font-family: 'Josefin Sans', Arial, sans-serif;
     ul {
         list-style: none;
         padding: 0;
@@ -293,7 +289,7 @@ footer .form-group textarea, .form-group input {
     width: 100%;
     background-color: $gold;
     border-radius: 6px;
-    padding: 10px 0;
+    padding: 7px 0;
     text-align: center;
 }
 
@@ -304,21 +300,5 @@ footer .form-group textarea, .form-group input {
 .agent-cta-title h6 {
     color: white !important;
     font-weight: bold;
+    font-size: 16px;
 }
-
-
-
-// #fixed-footer h6 {
-//     color: $gold;
-// }
-
-// #fixed-footer .agent-cta-title {
-//     width: 100%;
-//     background-color: $gold;
-// }
-
-// .agent-cta-title h6 {
-//     color: white;
-//     font-weight: bold;
-//     text-align: center;
-// }
