@@ -468,11 +468,8 @@ header {
     display: inline-block;
     z-index: 300; } }
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 14px; }
-
-.div-nav-space {
-  margin-top: 120px; }
 
 h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
@@ -501,6 +498,13 @@ button {
 
 .gold {
   color: #b9874c; }
+
+.div-nav-space {
+  margin-top: 120px; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
 
 .row.match-my-cols {
   overflow: hidden; }
@@ -572,7 +576,7 @@ button {
 form .row {
   margin: 20px 0; }
 
-form button {
+.modal-body form button {
   margin-left: 15px; }
 
 label {
@@ -582,6 +586,9 @@ label {
   font-weight: 300;
   text-transform: uppercase;
   color: #b9874c; }
+
+.form-group textarea, .form-group input {
+  background-color: transparent; }
 
 input[type="text"],
 input[type="email"],
@@ -627,6 +634,8 @@ textarea {
   border: #b9874c 1px solid;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   border-radius: 0px;
   outline: none;
   -webkit-box-shadow: none !important;
@@ -657,16 +666,6 @@ footer .agent-info {
   font-size: 16px;
   font-weight: 100; }
 
-footer ul {
-  list-style: none;
-  padding-left: 0; }
-
-footer form button {
-  margin-left: 0; }
-
-footer .form-group textarea, .form-group input {
-  background-color: transparent; }
-
 .site-footer {
   border-top: solid 1px #b9874c;
   margin-top: 40px;
@@ -679,6 +678,8 @@ footer .form-group textarea, .form-group input {
   color: white;
   font-size: 20px;
   border: solid 1px #b9874c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 6px 12px 4px;
   background-color: #b9874c; }
@@ -694,17 +695,18 @@ footer .form-group textarea, .form-group input {
   float: right;
   margin: auto 15px 15px auto;
   border: #b9874c 1px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: white; }
-  #fixed-footer ul {
-    list-style: none;
-    padding: 0; }
   #fixed-footer h6 {
     color: #b9874c; }
 
 .agent-cta-title {
   width: 100%;
   background-color: #b9874c;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 7px 0;
   text-align: center; }
@@ -729,19 +731,9 @@ footer .form-group textarea, .form-group input {
 .contact-agent-info h3 {
   color: black; }
 
-.contact-agent-info ul {
-  list-style: none;
-  padding-left: 0; }
-
 .contact-agent-message {
   background-color: black;
   color: white;
   padding: 70px; }
-
-.contact-agent-message form button {
-  margin-left: 0; }
-
-.contact-agent-message .form-group textarea, .form-group input {
-  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

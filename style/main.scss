@@ -17,12 +17,8 @@
 // ************************************* //
 // 1.0 General ========= //
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
-}
-
-.div-nav-space {
-    margin-top: 120px;
 }
 
 // ************************************* //
@@ -59,6 +55,15 @@ button {
 
 .gold {
     color: $gold;
+}
+
+.div-nav-space {
+    margin-top: 120px;
+}
+
+ul {
+    list-style:none;
+    padding-left: 0;
 }
 
 .row.match-my-cols {
@@ -154,7 +159,7 @@ form .row {
     margin: 20px 0;
 }
 
-form button {
+.modal-body form button {
     margin-left: 15px;
 }
 
@@ -165,6 +170,10 @@ label {
     font-weight: 300;
     text-transform: uppercase;
     color: $gold;
+}
+
+.form-group textarea, .form-group input {
+    background-color: rgba(0,0,0,0.0);
 }
 
 input[type="text"],
@@ -202,11 +211,12 @@ textarea {
     color: $gold;
     font-weight: 100;
     line-height: 25px;
-    
 }
 
 .form-control {
     border: $gold 1px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -226,7 +236,6 @@ footer {
     padding: 50px 0;
     color: rgba(255,255,255,0.9)!important;
     margin-top: 30px;
-    //font-family: 'Josefin Sans', Arial, sans-serif;
 }
 
 footer h4, h5, {
@@ -250,19 +259,6 @@ footer .agent-info {
     font-weight: 100;
 }
 
-footer ul {
-    list-style:none;
-    padding-left: 0;
-}
-    
-footer form button {
-    margin-left: 0;
-}
-
-footer .form-group textarea, .form-group input {
-    background-color: rgba(0,0,0,0.0);
-}
-
 // ************************************* //
 // 5.1 SITE FOOTER ========= //
 .site-footer {
@@ -279,6 +275,8 @@ footer .form-group textarea, .form-group input {
     color: white;
     font-size: 20px;
     border: solid 1px $gold;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 6px 12px 4px ;
     background-color: $gold;
@@ -298,12 +296,10 @@ footer .form-group textarea, .form-group input {
     float: right;
     margin: auto 15px 15px auto;
     border: $gold 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: white;
-    ul {
-        list-style: none;
-        padding: 0;
-    }
     h6 {
         color: $gold;
     }
@@ -312,6 +308,8 @@ footer .form-group textarea, .form-group input {
 .agent-cta-title {
     width: 100%;
     background-color: $gold;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     border-radius: 6px;
     padding: 7px 0;
     text-align: center;
@@ -348,21 +346,8 @@ footer .form-group textarea, .form-group input {
     color: black;
 }
 
-.contact-agent-info ul {
-    list-style:none;
-    padding-left: 0;
-}
-
 .contact-agent-message {
     background-color: black;
     color: white;
     padding: 70px;
-}
-
-.contact-agent-message form button {
-    margin-left: 0;
-}
-
-.contact-agent-message .form-group textarea, .form-group input {
-    background-color: rgba(0,0,0,0.0);
 }
