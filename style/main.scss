@@ -2,12 +2,31 @@
 @import "sass/normalize.scss";
 @import "sass/navbar.scss";
 
-// ======== General ========= //
+// 1.0 General ========= //
+// 2.0 Global ========= //
+// 3.0 Hero ========= //
+// 3.1 Count-Down ========= //
+// 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= //
+// 4.0 RSVP MODAL ========= //
+// 5.0 FOOTER ========= //
+// 5.1 SITE FOOTER ========= //
+// 5.2 FIXED FOOTER ========= //
+// 6.0 FAQ PAGE ======= //
+// 7.0 CONTACT PAGE ======= //
+
+// ************************************* //
+// 1.0 General ========= //
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
-// ======== Global========= //
+.div-nav-space {
+    margin-top: 120px;
+}
+
+// ************************************* //
+// 2.0 Global========= //
 h1, h2, h3 {
     font-family: 'Josefin Sans', Arial, sans-serif;
     color: $gold;
@@ -42,17 +61,17 @@ button {
     color: $gold;
 }
 
-// .row.match-my-cols {
-//     overflow: hidden; 
-// }
+.row.match-my-cols {
+    overflow: hidden; 
+}
 
-// .row.match-my-cols [class*="col-"]{
-//     margin-bottom: -99999px;
-//     padding-bottom: 99999px;
-// }
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 100030px;
+}
 
-
-// ======== Hero ========= //
+// ************************************* //
+// 3.0 Hero ========= //
 #hero {
     background: url("../assets/img/white_rose.jpg") center no-repeat;
     background-size: cover;
@@ -92,7 +111,8 @@ button {
     font-size: 26px;
 }
 
-// ======== COUNT DOWN ========= //
+// ************************************* //
+// 3.1 COUNT DOWN ========= //
 #count-down {
     padding: 50px 0 0 0;
     text-align: center;
@@ -111,7 +131,8 @@ button {
     font-size: 50px;
 }
 
-// ======== WEDDING, DESTINATION, RESERVATION INFO ========= //
+// ************************************* //
+// 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= //
 #sample-info {
     padding: 30px;  
 }
@@ -127,8 +148,8 @@ button {
     padding: 60px;
 }
 
-
-// ======== RSVP MODAL ========= //
+// ************************************* //
+// 4.0 RSVP MODAL ========= //
 form .row {
     margin: 20px 0;
 }
@@ -198,13 +219,14 @@ textarea {
     }
 }
 
-// ======== FOOTER ========= //
+// ************************************* //
+// 5.0 FOOTER ========= //
 footer {
-    background-color: black;
+    background-color: rgba(0,0,0,0.9);
     padding: 50px 0;
     color: rgba(255,255,255,0.9)!important;
     margin-top: 30px;
-    font-family: 'Josefin Sans', Arial, sans-serif;
+    //font-family: 'Josefin Sans', Arial, sans-serif;
 }
 
 footer h4, h5, {
@@ -241,7 +263,8 @@ footer .form-group textarea, .form-group input {
     background-color: rgba(0,0,0,0.0);
 }
 
-// ======== SITE FOOTER ========= //
+// ************************************* //
+// 5.1 SITE FOOTER ========= //
 .site-footer {
     border-top: solid 1px $gold;
     margin-top: 40px;
@@ -265,7 +288,8 @@ footer .form-group textarea, .form-group input {
     }
 }
 
-// ======== FIXED FOOTER ========= //
+// ************************************* //
+// 5.2 FIXED FOOTER ========= //
 #fixed-footer {
     display: inline-block !important;
     position: fixed;
@@ -301,4 +325,44 @@ footer .form-group textarea, .form-group input {
     color: white !important;
     font-weight: bold;
     font-size: 16px;
+}
+
+// ************************************* //
+// 6.0 FAQ PAGE ======= //
+
+.faq-content p {
+    margin-bottom: 30px;
+}
+
+// ************************************* //
+// 7.0 CONTACT PAGE ======= //
+
+.contact-agent-info {
+    background-color: $gold;
+    color: white;
+    padding: 70px;
+    font-size: 16px;
+}
+
+.contact-agent-info h3 {
+    color: black;
+}
+
+.contact-agent-info ul {
+    list-style:none;
+    padding-left: 0;
+}
+
+.contact-agent-message {
+    background-color: black;
+    color: white;
+    padding: 70px;
+}
+
+.contact-agent-message form button {
+    margin-left: 0;
+}
+
+.contact-agent-message .form-group textarea, .form-group input {
+    background-color: rgba(0,0,0,0.0);
 }

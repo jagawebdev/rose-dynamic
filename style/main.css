@@ -468,7 +468,11 @@ header {
     display: inline-block;
     z-index: 300; } }
 body {
-  font-family: 'Roboto', Helvetica, sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px; }
+
+.div-nav-space {
+  margin-top: 120px; }
 
 h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
@@ -497,6 +501,13 @@ button {
 
 .gold {
   color: #b9874c; }
+
+.row.match-my-cols {
+  overflow: hidden; }
+
+.row.match-my-cols [class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 100030px; }
 
 #hero {
   background: url("../assets/img/white_rose.jpg") center no-repeat;
@@ -625,11 +636,10 @@ textarea {
     border: solid 1px #b9874c; }
 
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.9) !important;
-  margin-top: 30px;
-  font-family: 'Josefin Sans', Arial, sans-serif; }
+  margin-top: 30px; }
 
 footer h4, h5 {
   color: #b9874c; }
@@ -706,5 +716,32 @@ footer .form-group textarea, .form-group input {
   color: white !important;
   font-weight: bold;
   font-size: 16px; }
+
+.faq-content p {
+  margin-bottom: 30px; }
+
+.contact-agent-info {
+  background-color: #b9874c;
+  color: white;
+  padding: 70px;
+  font-size: 16px; }
+
+.contact-agent-info h3 {
+  color: black; }
+
+.contact-agent-info ul {
+  list-style: none;
+  padding-left: 0; }
+
+.contact-agent-message {
+  background-color: black;
+  color: white;
+  padding: 70px; }
+
+.contact-agent-message form button {
+  margin-left: 0; }
+
+.contact-agent-message .form-group textarea, .form-group input {
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
