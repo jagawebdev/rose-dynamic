@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   
-  /**
+   /**
    * Drop Down Menu
    */
     $('.hamburger').click( function(event){
@@ -13,4 +13,9 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
+    
+    /**
+    * Fancybox image slider
+    */
+    $(".fancybox").fancybox();
 });

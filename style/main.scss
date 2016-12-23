@@ -13,9 +13,21 @@
 // 5.2 FIXED FOOTER ========= //
 // 6.0 FAQ PAGE ======= //
 // 7.0 CONTACT PAGE ======= //
+// 8.0 WEDDING PAGE ======= //
+// 8.1 GALLERY ======= //
+// 8.2 STORY LINE ======= //
+// 8.3 BRIDESMAIDS AND GROOMSMEN ======= //
+// 8.4 REGISTERY ======= //
+// 9.0 DESTINATION PAGE ======= //
 
 // ************************************* //
 // 1.0 General ========= //
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
@@ -25,7 +37,7 @@ body {
 // 2.0 Global========= //
 h1, h2, h3 {
     font-family: 'Josefin Sans', Arial, sans-serif;
-    color: $gold;
+    color: $main-color;
     text-transform: uppercase;
 }
 
@@ -38,13 +50,13 @@ button {
     position: relative;
     font-family: 'Josefin Sans', Arial, sans-serif;
     text-transform: uppercase;
-    border: solid 1px $gold;
+    border: solid 1px $main-color;
     padding: 5px 10px 3px 10px;
-    background-color: $gold;
+    background-color: $main-color;
     overflow: hidden;
     color: white;
     &:hover {
-        color: $gold;
+        color: $main-color;
         background-color: rgba(0,0,0,0.0);
     }
 }
@@ -54,7 +66,7 @@ button {
 }
 
 .gold {
-    color: $gold;
+    color: $main-color;
 }
 
 .div-nav-space {
@@ -75,6 +87,10 @@ ul {
     padding-bottom: 100030px;
 }
 
+.clearfix {
+    clear: both;
+}
+
 // ************************************* //
 // 3.0 Hero ========= //
 #hero {
@@ -83,36 +99,27 @@ ul {
     width: 100%;
     height: 700px;
     font-family: 'Josefin Sans', Arial, sans-serif;
-    color: $gold;
+    color: $main-color;
     padding-top: 220px;
 }
 
-.couple-name-one,
-.couple-name-and,
-.couple-name-two{
+.couple-name {
     font-family: 'Playfair Display SC', serif;
-}
-
-.couple-name-one {
-    text-align: right;
+    color: $main-color;
     font-size: 60px;
 }
 
 .couple-name-two {
-    text-align: left;
     padding-top: 80px;
-    font-size: 60px;
 }
 
 .couple-name-and {
     font-size: 200px;
-    text-align: center;
     line-height: 150px;
 }
 
 .wedding-subtitle {
     margin-top: 50px;
-    text-align: center;
     font-size: 26px;
 }
 
@@ -120,13 +127,12 @@ ul {
 // 3.1 COUNT DOWN ========= //
 #count-down {
     padding: 50px 0 0 0;
-    text-align: center;
     font-family: 'Josefin Sans', Arial, sans-serif;
-    color: $gold;
+    color: $main-color;
 }
 
 #count-down .label {
-    color: $gold;
+    color: $main-color;
     font-size: 14px;
     font-weight: 100;
     text-transform: uppercase;
@@ -145,7 +151,7 @@ ul {
 .sample-info-pic img {
     width: 100%;
     height: auto;
-    outline: 1px solid $gold;
+    outline: 1px solid $main-color;
     outline-offset: -20px;
 }
 
@@ -169,7 +175,7 @@ label {
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
-    color: $gold;
+    color: $main-color;
 }
 
 .form-group textarea, .form-group input {
@@ -184,8 +190,8 @@ input[type="password"],
 input[type="search"],
 textarea {
     color: #666;
-    border-bottom: solid 1px $gold;
-    border-left: solid 1px $gold;
+    border-bottom: solid 1px $main-color;
+    border-left: solid 1px $main-color;
     border-top: none;
     border-right: none;
     -webkit-border-radius: 0px;
@@ -199,8 +205,8 @@ textarea {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     &:focus {
-        border-bottom: solid 1px $gold;
-        border-left: solid 1px $gold;
+        border-bottom: solid 1px $main-color;
+        border-left: solid 1px $main-color;
         border-top: none;
         border-right: none;
     }
@@ -208,13 +214,13 @@ textarea {
 
 .close-button {
     font-size: 80px;
-    color: $gold;
+    color: $main-color;
     font-weight: 100;
     line-height: 25px;
 }
 
 .form-control {
-    border: $gold 1px solid;
+    border: $main-color 1px solid;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -225,32 +231,29 @@ textarea {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     &:focus {
-        border: solid 1px $gold;
+        border: solid 1px $main-color;
     }
 }
 
 // ************************************* //
 // 5.0 FOOTER ========= //
 footer {
-    background-color: rgba(0,0,0,0.9);
+    border-top: solid 1px $main-color;
+    background-color: $footer-color;
     padding: 50px 0;
-    color: rgba(255,255,255,0.9)!important;
+    color: black!important;
     margin-top: 30px;
 }
 
-footer h4, h5, {
-    color: $gold;
-}
-
-footer h6 {
-    color: rgba(255,255,255,0.9);
+footer h5, footer h4 {
+    color: $main-color;
 }
 
 footer a {
-    color: $gold;
+    color: $main-color;
     text-decoration: underline;
     &:hover {
-        color: $gold;
+        color: $main-color;
     }
 }
 
@@ -262,9 +265,9 @@ footer .agent-info {
 // ************************************* //
 // 5.1 SITE FOOTER ========= //
 .site-footer {
-    border-top: solid 1px $gold;
+    border-top: solid 1px $main-color;
     margin-top: 40px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .social-list ul {
@@ -274,15 +277,15 @@ footer .agent-info {
 .social-list ul a {
     color: white;
     font-size: 20px;
-    border: solid 1px $gold;
+    border: solid 1px $main-color;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 6px 12px 4px ;
-    background-color: $gold;
+    background-color: $main-color;
     &:hover {
         background-color: rgba(0,0,0,0.0);
-        color: $gold;
+        color: $main-color;
     }
 }
 
@@ -295,24 +298,23 @@ footer .agent-info {
     right: 0;
     float: right;
     margin: auto 15px 15px auto;
-    border: $gold 1px solid;
+    border: $main-color 1px solid;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: white;
     h6 {
-        color: $gold;
+        color: $main-color;
     }
 }
 
 .agent-cta-title {
     width: 100%;
-    background-color: $gold;
+    background-color: $main-color;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
     padding: 7px 0;
-    text-align: center;
 }
 
 .agent-cta-info {
@@ -336,18 +338,88 @@ footer .agent-info {
 // 7.0 CONTACT PAGE ======= //
 
 .contact-agent-info {
-    background-color: $gold;
-    color: white;
+    background-color: #f6f6f5;
     padding: 70px;
     font-size: 16px;
 }
 
-.contact-agent-info h3 {
-    color: black;
+.contact-agent-message {
+    background-color: #f0efee;
+    padding: 70px;
 }
 
-.contact-agent-message {
-    background-color: black;
-    color: white;
-    padding: 70px;
+// ************************************* //
+// 8.0 WEDDING PAGE ======= //
+#wedding {
+    margin-bottom: 20px;
+}
+.container-space {
+    padding: 40px 0 60px 0;
+}
+
+// ************************************* //
+// 8.1 GALLERY ======= //
+.image-list {
+    display: inline-block;
+}
+
+// ************************************* //
+// 8.2 STORY LINE ======= //
+#couple-story {
+    background-color: #f0efee;
+}
+
+#couple-story button{
+    margin-top: 10px;
+}
+
+.fade {
+    opacity: 0.5;
+}
+
+// ************************************* //
+// 8.3 BRIDESMAIDS AND GROOMSMEN ======= //
+#maids-grooms {
+    background-color: #f6f6f5;
+}
+
+#maids-grooms .row-space{
+    padding: 15px 0;
+}
+
+.jthumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.jthumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+// ************************************* //
+// 8.4 REGISTERY ======= //
+
+#registery button{
+    margin: 5px 0 0 0;
+}
+
+// ************************************* //
+// 9.0 DESTINATION PAGE ======= //
+#packages {
+    background-color: #f6f6f5;
+}
+
+// ************************************* //
+// 9.1 BOOKING INFORMATION ======= //
+#booking {
+    background-color: #f0efee;
 }
