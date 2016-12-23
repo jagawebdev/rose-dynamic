@@ -456,6 +456,9 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+img {
+  width: 100%; }
+
 body {
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 14px; }
@@ -699,6 +702,9 @@ footer .agent-info {
   font-weight: bold;
   font-size: 16px; }
 
+.faq-content h5 {
+  color: #b9874c; }
+
 .faq-content p {
   margin-bottom: 30px; }
 
@@ -755,9 +761,47 @@ footer .agent-info {
   margin: 5px 0 0 0; }
 
 #packages {
-  background-color: #f6f6f5; }
+  background-color: #f0efee; }
+
+.destination-pics {
+  margin-top: 30px; }
+
+.bthumbnail {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  outline: 1px solid #b9874c;
+  outline-offset: -20px; }
+
+.bthumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.package-well {
+  background-color: white;
+  padding-top: 15px;
+  margin: 15px 0; }
+  .package-well h4 {
+    color: #b9874c; }
+  .package-well img {
+    margin-top: 10px; }
 
 #booking {
-  background-color: #f0efee; }
+  background-color: #f6f6f5; }
+
+.booking-well {
+  background-color: white;
+  padding: 15px;
+  border: solid 10px #f6f6f5; }
+  .booking-well .booking-number {
+    text-transform: uppercase;
+    color: #b9874c; }
 
 /*# sourceMappingURL=main.css.map */

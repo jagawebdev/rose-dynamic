@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
@@ -330,6 +334,10 @@ footer .agent-info {
 // ************************************* //
 // 6.0 FAQ PAGE ======= //
 
+.faq-content h5 {
+    color: $main-color;
+}
+
 .faq-content p {
     margin-bottom: 30px;
 }
@@ -415,11 +423,62 @@ footer .agent-info {
 // ************************************* //
 // 9.0 DESTINATION PAGE ======= //
 #packages {
-    background-color: #f6f6f5;
+    background-color: #f0efee;
+}
+
+.destination-pics {
+    margin-top: 30px;
+}
+
+.bthumbnail {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    outline: 1px solid $main-color;
+    outline-offset: -20px;
+}
+
+.bthumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 // ************************************* //
-// 9.1 BOOKING INFORMATION ======= //
+// 9.1 PACKAGE INFORMATION ======= //
+.package-well {
+    background-color: white;
+    padding-top: 15px;
+    margin: 15px 0;
+    h4 {
+        color: $main-color;
+    }
+    img {
+        margin-top: 10px;
+    }
+}
+
+// ************************************* //
+// 9.2 ADDITIONAL INFORMATION ======= //
+
+// ************************************* //
+// 9.3 BOOKING INFORMATION ======= //
 #booking {
-    background-color: #f0efee;
+    background-color: #f6f6f5;
+}
+
+.booking-well {
+    background-color: white;
+    padding: 15px;
+    border: solid 10px #f6f6f5;
+    .booking-number {
+        text-transform: uppercase;
+        color: $main-color;
+    }
 }
