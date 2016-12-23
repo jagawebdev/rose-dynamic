@@ -61,7 +61,39 @@
                </a>
         </navbar>
     </header><!-- end header -->
-	
+    
+    <div id="menu">
+        <navbar class="navigation container">
+                <a href="#/landing#hero"><div class="logo">s & b</div></a>
+                
+                <div class="navigation-list">
+                    <ul>
+                        <li><a href="#/landing#hero">Home</a></li>
+                        <li><a href="#/wedding#wedding">Wedding</a></li>
+                        <li><a href="#/destination#destination">Destination</a></li>
+                        <li><a href="#/contact#contact">Contact</a></li>
+                        <li><a href="#/faq#faq">Faq</a></li>
+                        <li><a href="#/destination#additional-info"><button class="book-now">Book Now!</button></a></li>
+                    </ul>
+                </div><!-- end navigation-list -->
+                
+                <a href="#">
+                    <div class="hamburger ion-android-menu">
+                        <div class="drop-menu">
+                            <ul class="drop-ul">
+                                <li><a href="#/landing#hero" class="drop-link">Home</a></li>
+                                <li><a href="#/wedding#wedding" class="drop-link">Wedding</a></li>
+                                <li><a href="#/destination#destination" class="drop-link">Destination</a></li>
+                                <li><a href="#/contact#contact" class="drop-link">Contact</a></li>
+                                <li><a href="#/faq#faq" class="drop-link">Faq</a></li>
+                                <li><a href="#/destination#additional-info" class="drop-link bold">Book Now!</a></li>
+                            </ul>
+                        </div>
+                   </div>
+               </a>
+        </navbar>
+    </div><!-- end header -->
+    
 	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
 	<div ng-view></div>
 	
@@ -126,7 +158,7 @@
                         <li><a href="#/destination#destination" class="drop-link">Destination</a></li>
                         <li><a href="#/contact#contact" class="drop-link">Contact</a></li>
                         <li><a href="#/faq#faq" class="drop-link">Faq</a></li>
-                        <li><a href="#/destination#booking" class="drop-link bold">Book Now!</a></li>
+                        <li><a href="#/destination#additional-info" class="drop-link bold">Book Now!</a></li>
                     </ul>
 	            </div>
 	        </div><!-- end row -->

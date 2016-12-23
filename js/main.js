@@ -13,4 +13,16 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
+    
+    
+    /**
+    * Menu show after scroll
+    */
+    $(window).scroll(function(){                          
+        if ($(this).scrollTop() > 200) {
+            $('#menu').fadeIn(500);
+        } else {
+            $('#menu').fadeOut(500);
+        }
+    });
 });
