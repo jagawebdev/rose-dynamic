@@ -19,6 +19,9 @@
 // 8.3 BRIDESMAIDS AND GROOMSMEN ======= //
 // 8.4 REGISTERY ======= //
 // 9.0 DESTINATION PAGE ======= //
+// 9.1 PACKAGE INFORMATION ======= //
+// 9.2 ADDITIONAL INFORMATION ======= //
+// 9.3 BOOKING ======= //
 
 // ************************************* //
 // 1.0 General ========= //
@@ -165,6 +168,10 @@ ul {
 
 // ************************************* //
 // 4.0 RSVP MODAL ========= //
+#rsvpModal {
+    margin-top: 80px;
+}
+
 form .row {
     margin: 20px 0;
 }
@@ -346,13 +353,13 @@ footer .agent-info {
 // 7.0 CONTACT PAGE ======= //
 
 .contact-agent-info {
-    background-color: #f6f6f5;
+    background-color: #f0efee;
     padding: 70px;
     font-size: 16px;
 }
 
 .contact-agent-message {
-    background-color: #f0efee;
+    background-color: #e2e1e0;
     padding: 70px;
 }
 
@@ -369,6 +376,10 @@ footer .agent-info {
 // 8.1 GALLERY ======= //
 .image-list {
     display: inline-block;
+}
+
+.more_pic {
+    display: none;
 }
 
 // ************************************* //
@@ -388,7 +399,7 @@ footer .agent-info {
 // ************************************* //
 // 8.3 BRIDESMAIDS AND GROOMSMEN ======= //
 #maids-grooms {
-    background-color: #f6f6f5;
+    background-color: #e2e1e0;
 }
 
 #maids-grooms .row-space{
@@ -470,13 +481,13 @@ footer .agent-info {
 // ************************************* //
 // 9.3 BOOKING INFORMATION ======= //
 #booking {
-    background-color: #f6f6f5;
+    background-color: #e2e1e0;
 }
 
 .booking-well {
     background-color: white;
     padding: 15px;
-    border: solid 10px #f6f6f5;
+    border: solid 10px #e2e1e0;
     .booking-number {
         text-transform: uppercase;
         color: $main-color;

@@ -20,9 +20,14 @@ $(document).ready(function() {
     */
     $(window).scroll(function(){                          
         if ($(this).scrollTop() > 200) {
-            $('#menu').fadeIn(500);
+            $('#menu').fadeIn(400);
         } else {
-            $('#menu').fadeOut(500);
+            $('#menu').fadeOut(400);
         }
     });
+    
+    /**
+    * Fancybox
+    */
+    $(".fancybox").fancybox();
 });

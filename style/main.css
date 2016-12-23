@@ -572,6 +572,9 @@ ul {
 .sample-info-text {
   padding: 60px; }
 
+#rsvpModal {
+  margin-top: 80px; }
+
 form .row {
   margin: 20px 0; }
 
@@ -722,12 +725,12 @@ footer .agent-info {
   margin-bottom: 30px; }
 
 .contact-agent-info {
-  background-color: #f6f6f5;
+  background-color: #f0efee;
   padding: 70px;
   font-size: 16px; }
 
 .contact-agent-message {
-  background-color: #f0efee;
+  background-color: #e2e1e0;
   padding: 70px; }
 
 #wedding {
@@ -739,6 +742,9 @@ footer .agent-info {
 .image-list {
   display: inline-block; }
 
+.more_pic {
+  display: none; }
+
 #couple-story {
   background-color: #f0efee; }
 
@@ -749,7 +755,7 @@ footer .agent-info {
   opacity: 0.5; }
 
 #maids-grooms {
-  background-color: #f6f6f5; }
+  background-color: #e2e1e0; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -807,12 +813,12 @@ footer .agent-info {
     margin-top: 10px; }
 
 #booking {
-  background-color: #f6f6f5; }
+  background-color: #e2e1e0; }
 
 .booking-well {
   background-color: white;
   padding: 15px;
-  border: solid 10px #f6f6f5; }
+  border: solid 10px #e2e1e0; }
   .booking-well .booking-number {
     text-transform: uppercase;
     color: #b9874c; }
