@@ -728,6 +728,9 @@ footer a {
 
 #wedding {
   margin-bottom: 20px; }
+  #wedding .couple-name {
+    margin-bottom: 0;
+    line-height: 50px; }
 
 .container-space {
   padding: 40px 0 60px 0; }
@@ -737,6 +740,35 @@ footer a {
 
 .more_pic {
   display: none; }
+
+.wthumbnail {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden; }
+
+.wthumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.more-pic-link {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */ }
+
+.thumb-meta {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  margin: 105px 0 auto 58px;
+  text-align: center;
+  padding: 5px 15px; }
 
 #couple-story {
   background-color: #f6f6f6; }
@@ -774,8 +806,10 @@ footer a {
 #registery button {
   margin: 5px 0 0 0; }
 
-#packages {
-  background-color: #f6f6f6; }
+#destination h1 {
+  margin-bottom: 0; }
+#destination h4 {
+  margin-top: 5px; }
 
 .destination-pics {
   margin-top: 30px; }
@@ -798,6 +832,11 @@ footer a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+#packages {
+  background-color: #f6f6f6; }
+  #packages h1 {
+    margin-bottom: 10px; }
+
 .package-well-img {
   background-color: white;
   padding-top: 15px;
@@ -810,6 +849,11 @@ footer a {
 
 #booking {
   background-color: #f6f6f6; }
+  #booking h1 {
+    margin-bottom: 0; }
+  #booking h4 {
+    margin-top: 5px;
+    margin-bottom: 20px; }
 
 .booking-well {
   background-color: white;
