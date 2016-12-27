@@ -48,9 +48,8 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-h4, h5, h6 {
-    font-family: 'Josefin Sans', Arial, sans-serif;
-    text-transform: uppercase;
+.first-p {
+    margin: 0;
 }
 
 button {
@@ -91,7 +90,11 @@ ul {
 
 .row.match-my-cols [class*="col-"]{
     margin-bottom: -99999px;
-    padding-bottom: 100030px;
+    padding-bottom: 100015px;
+}
+
+.off-white-bg {
+    background-color: #f6f6f6;
 }
 
 .clearfix {
@@ -133,7 +136,7 @@ ul {
 // ************************************* //
 // 3.1 COUNT DOWN ========= //
 #count-down {
-    padding: 50px 0 0 0;
+    padding: 40px 0 20px 0;
     font-family: 'Josefin Sans', Arial, sans-serif;
     color: $main-color;
 }
@@ -163,7 +166,7 @@ ul {
 }
 
 .sample-info-text {
-    padding: 60px;
+    padding: 60px 60px 0;
 }
 
 // ************************************* //
@@ -201,10 +204,7 @@ input[type="password"],
 input[type="search"],
 textarea {
     color: #666;
-    border-bottom: solid 1px $main-color;
-    border-left: solid 1px $main-color;
-    border-top: none;
-    border-right: none;
+    border: solid 1px $main-color;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -216,10 +216,7 @@ textarea {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     &:focus {
-        border-bottom: solid 1px $main-color;
-        border-left: solid 1px $main-color;
-        border-top: none;
-        border-right: none;
+        border: solid 1px $main-color;
     }
 }
 
@@ -253,7 +250,6 @@ footer {
     background-color: $footer-color;
     padding: 50px 0;
     color: black!important;
-    margin-top: 30px;
 }
 
 footer h5, footer h4 {
@@ -266,11 +262,6 @@ footer a {
     &:hover {
         color: $main-color;
     }
-}
-
-footer .agent-info {
-    font-size: 16px;
-    font-weight: 100;
 }
 
 // ************************************* //
@@ -325,17 +316,18 @@ footer .agent-info {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    padding: 7px 0;
+    padding: 20px 0 1px 0;
+    color: white;
+    font-size: 13px;
 }
 
 .agent-cta-info {
-    padding: 0 10px;
+    padding: 5px 10px 0;
 }
 
-.agent-cta-title h6 {
-    color: white !important;
-    font-weight: bold;
-    font-size: 16px;
+.agent-cta-title .title1 {
+    font-size: 30px;
+    line-height: 5px;
 }
 
 // ************************************* //
@@ -353,14 +345,16 @@ footer .agent-info {
 // 7.0 CONTACT PAGE ======= //
 
 .contact-agent-info {
-    background-color: #f0efee;
-    padding: 70px;
-    font-size: 16px;
+    background-color: #f6f6f6;
+    padding: 35px 60px;
 }
 
 .contact-agent-message {
-    background-color: #e2e1e0;
-    padding: 70px;
+    background-color: #f2f2f2;
+    padding: 35px 60px;
+    h3 {
+        padding-bottom: 10px;
+    }
 }
 
 // ************************************* //
@@ -385,7 +379,7 @@ footer .agent-info {
 // ************************************* //
 // 8.2 STORY LINE ======= //
 #couple-story {
-    background-color: #f0efee;
+    background-color: #f6f6f6;
 }
 
 #couple-story button{
@@ -399,7 +393,10 @@ footer .agent-info {
 // ************************************* //
 // 8.3 BRIDESMAIDS AND GROOMSMEN ======= //
 #maids-grooms {
-    background-color: #e2e1e0;
+    background-color: #f6f6f6;
+    h4 {
+        color: $main-color;
+    }
 }
 
 #maids-grooms .row-space{
@@ -434,7 +431,7 @@ footer .agent-info {
 // ************************************* //
 // 9.0 DESTINATION PAGE ======= //
 #packages {
-    background-color: #f0efee;
+    background-color: #f6f6f6;
 }
 
 .destination-pics {
@@ -463,16 +460,17 @@ footer .agent-info {
 
 // ************************************* //
 // 9.1 PACKAGE INFORMATION ======= //
-.package-well {
+.package-well-img {
     background-color: white;
     padding-top: 15px;
     margin: 15px 0;
     h4 {
         color: $main-color;
     }
-    img {
-        margin-top: 10px;
-    }
+}
+
+.package-well-content {
+    margin-top: -10px;
 }
 
 // ************************************* //
@@ -481,13 +479,13 @@ footer .agent-info {
 // ************************************* //
 // 9.3 BOOKING INFORMATION ======= //
 #booking {
-    background-color: #e2e1e0;
+    background-color: #f6f6f6;
 }
 
 .booking-well {
     background-color: white;
     padding: 15px;
-    border: solid 10px #e2e1e0;
+    border: solid 10px #f6f6f6;
     .booking-number {
         text-transform: uppercase;
         color: $main-color;

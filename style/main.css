@@ -481,9 +481,8 @@ h1, h2, h3 {
   color: #b9874c;
   text-transform: uppercase; }
 
-h4, h5, h6 {
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  text-transform: uppercase; }
+.first-p {
+  margin: 0; }
 
 button {
   position: relative;
@@ -516,7 +515,10 @@ ul {
 
 .row.match-my-cols [class*="col-"] {
   margin-bottom: -99999px;
-  padding-bottom: 100030px; }
+  padding-bottom: 100015px; }
+
+.off-white-bg {
+  background-color: #f6f6f6; }
 
 .clearfix {
   clear: both; }
@@ -547,7 +549,7 @@ ul {
   font-size: 26px; }
 
 #count-down {
-  padding: 50px 0 0 0;
+  padding: 40px 0 20px 0;
   font-family: 'Josefin Sans', Arial, sans-serif;
   color: #b9874c; }
 
@@ -570,7 +572,7 @@ ul {
   outline-offset: -20px; }
 
 .sample-info-text {
-  padding: 60px; }
+  padding: 60px 60px 0; }
 
 #rsvpModal {
   margin-top: 80px; }
@@ -600,10 +602,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border-bottom: solid 1px #b9874c;
-  border-left: solid 1px #b9874c;
-  border-top: none;
-  border-right: none;
+  border: solid 1px #b9874c;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -621,10 +620,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    border-bottom: solid 1px #b9874c;
-    border-left: solid 1px #b9874c;
-    border-top: none;
-    border-right: none; }
+    border: solid 1px #b9874c; }
 
 .close-button {
   font-size: 80px;
@@ -650,8 +646,7 @@ footer {
   border-top: solid 1px #b9874c;
   background-color: #f0efee;
   padding: 50px 0;
-  color: black !important;
-  margin-top: 30px; }
+  color: black !important; }
 
 footer h5, footer h4 {
   color: #b9874c; }
@@ -661,10 +656,6 @@ footer a {
   text-decoration: underline; }
   footer a:hover {
     color: #b9874c; }
-
-footer .agent-info {
-  font-size: 16px;
-  font-weight: 100; }
 
 .site-footer {
   border-top: solid 1px #b9874c;
@@ -708,15 +699,16 @@ footer .agent-info {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  padding: 7px 0; }
+  padding: 20px 0 1px 0;
+  color: white;
+  font-size: 13px; }
 
 .agent-cta-info {
-  padding: 0 10px; }
+  padding: 5px 10px 0; }
 
-.agent-cta-title h6 {
-  color: white !important;
-  font-weight: bold;
-  font-size: 16px; }
+.agent-cta-title .title1 {
+  font-size: 30px;
+  line-height: 5px; }
 
 .faq-content h5 {
   color: #b9874c; }
@@ -725,13 +717,14 @@ footer .agent-info {
   margin-bottom: 30px; }
 
 .contact-agent-info {
-  background-color: #f0efee;
-  padding: 70px;
-  font-size: 16px; }
+  background-color: #f6f6f6;
+  padding: 35px 60px; }
 
 .contact-agent-message {
-  background-color: #e2e1e0;
-  padding: 70px; }
+  background-color: #f2f2f2;
+  padding: 35px 60px; }
+  .contact-agent-message h3 {
+    padding-bottom: 10px; }
 
 #wedding {
   margin-bottom: 20px; }
@@ -746,7 +739,7 @@ footer .agent-info {
   display: none; }
 
 #couple-story {
-  background-color: #f0efee; }
+  background-color: #f6f6f6; }
 
 #couple-story button {
   margin-top: 10px; }
@@ -755,7 +748,9 @@ footer .agent-info {
   opacity: 0.5; }
 
 #maids-grooms {
-  background-color: #e2e1e0; }
+  background-color: #f6f6f6; }
+  #maids-grooms h4 {
+    color: #b9874c; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -780,7 +775,7 @@ footer .agent-info {
   margin: 5px 0 0 0; }
 
 #packages {
-  background-color: #f0efee; }
+  background-color: #f6f6f6; }
 
 .destination-pics {
   margin-top: 30px; }
@@ -803,22 +798,23 @@ footer .agent-info {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.package-well {
+.package-well-img {
   background-color: white;
   padding-top: 15px;
   margin: 15px 0; }
-  .package-well h4 {
+  .package-well-img h4 {
     color: #b9874c; }
-  .package-well img {
-    margin-top: 10px; }
+
+.package-well-content {
+  margin-top: -10px; }
 
 #booking {
-  background-color: #e2e1e0; }
+  background-color: #f6f6f6; }
 
 .booking-well {
   background-color: white;
   padding: 15px;
-  border: solid 10px #e2e1e0; }
+  border: solid 10px #f6f6f6; }
   .booking-well .booking-number {
     text-transform: uppercase;
     color: #b9874c; }
