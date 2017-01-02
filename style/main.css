@@ -888,4 +888,54 @@ iframe {
     text-transform: uppercase;
     color: #b9874c; }
 
+@media (min-width: 769px) and (max-width: 1012px) {
+  #hero {
+    padding-top: 120px; }
+
+  .couple-name {
+    font-size: 50px; }
+
+  .couple-name-and {
+    font-size: 100px; }
+
+  .sample-info-text {
+    padding: 0px 60px 0; } }
+@media screen and (max-width: 768px) {
+  #hero {
+    padding-top: 120px;
+    height: 500px; }
+
+  .couple-name {
+    font-size: 50px;
+    text-align: center; }
+
+  .couple-name-and {
+    line-height: 75px; }
+
+  .couple-name-two {
+    padding-top: 0; }
+
+  #count-down {
+    padding: 20px 0 10px 0; }
+    #count-down .col-xs-2 {
+      padding: 0; }
+
+  #count-down .label {
+    font-size: 9px; }
+
+  #count-down .number {
+    font-size: 30px; }
+
+  .sample-info-text {
+    padding: 0 15px; }
+
+  .footer-nav {
+    display: none; }
+
+  #fixed-footer {
+    display: none !important; }
+
+  .contact-agent-info, .who-we-are {
+    padding: 35px 15px; } }
+
 /*# sourceMappingURL=main.css.map */
