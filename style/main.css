@@ -692,6 +692,10 @@ footer a {
   background-color: white; }
   #fixed-footer h6 {
     color: #b9874c; }
+  #fixed-footer a {
+    color: #b9874c;
+    text-decoration: underline;
+    cursor: pointer; }
 
 .agent-cta-title {
   width: 100%;
@@ -716,15 +720,32 @@ footer a {
 .faq-content p {
   margin-bottom: 30px; }
 
+#contact {
+  margin-bottom: 50px; }
+  #contact a {
+    color: #b9874c;
+    text-decoration: underline;
+    cursor: pointer; }
+
 .contact-agent-info {
   background-color: #f6f6f6;
   padding: 35px 60px; }
 
-.contact-agent-message {
+.who-we-are {
   background-color: #f2f2f2;
   padding: 35px 60px; }
-  .contact-agent-message h3 {
-    padding-bottom: 10px; }
+
+.promo {
+  background-color: white;
+  margin-top: 30px;
+  padding-top: 10px; }
+
+.black-bg img {
+  background-color: black;
+  padding: 8px 10px 10px 10px; }
+
+.travel-zap-logo {
+  margin-top: 30px; }
 
 #wedding {
   margin-bottom: 20px; }

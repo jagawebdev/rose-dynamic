@@ -3,52 +3,78 @@
     <div class="container">
         <div class="row div-nav-space match-my-cols">
             <div class="col-sm-6 contact-agent-info">
-            	<div class="">
 	                <h3>contact the agent</h3>
 	                <ul class="agent-info">
 	                    <li>Joanna Drake</li>
 	                    <li>Phone: 345.345.3444</li>
 	                    <li>Text: 345.345.3333</li>
-	                    <li>Email: joanna@travelzap.com</li>
+	                    <li>Email: <a href="mailto:joanna@travelzap.com">joanna@travelzap.com</a></li>
 	                </ul>
-                </div>
+	                
+	                </br>
+		            <h3>Send message to the agent</h3>
+	                    
+					<form method="post" class="form-horizontal contact-form" action="php/contact/contact.php">
+						<!-- Honeypot SPAM Protection -->
+						<input type="text" name="cf[honeypot]" style="display: none">
+						<!-- END Honeypot SPAM Protection -->
+	
+						<div class="form-group">
+							<div class="col-md-6">
+								<input type="text" name="cf[name]" class="form-control required" placeholder="Your Name">
+							</div>
+							<div class="col-md-6">
+								<input type="email" name="cf[email]" class="form-control required email" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-6">
+								<input type="phone" name="cf[phone]" class="form-control number" placeholder="Your Phone #">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<button type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
             </div><!-- end contact-agent-info -->
             
-            <div class="col-sm-6 contact-agent-message">
-                <h3>Send message to the agent</h3>
-                    
-				<form method="post" class="form-horizontal contact-form" action="php/contact/contact.php">
-					<!-- Honeypot SPAM Protection -->
-					<input type="text" name="cf[honeypot]" style="display: none">
-					<!-- END Honeypot SPAM Protection -->
-
-					<div class="form-group">
-						<div class="col-md-6">
-							<input type="text" name="cf[name]" class="form-control required" placeholder="Your Name">
-						</div>
-						<div class="col-md-6">
-							<input type="email" name="cf[email]" class="form-control required email" placeholder="Your Email">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-md-6">
-							<input type="phone" name="cf[phone]" class="form-control number" placeholder="Your Phone #">
-						</div>
-						<div class="col-md-6">
-							<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-md-12">
-							<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-md-12">
-							<button type="submit">Submit</button>
-						</div>
-					</div>
-				</form>
+            <div class="col-sm-6 who-we-are">
+                <h3>Who We Are</h3>
+	                <p>TravelZap is a group vacation service provider, 
+	                specializing in unprecedented combination of savings, 
+	                service, and efficiency for the leisure group travel 
+	                industry. We're known for our cutting edge proprietary 
+	                research and booking technology that creates the best 
+	                value vacation packages for our clients. TravelZap was 
+	                established on a core goal to make the leisure travel 
+	                industry more efficient and to direct the savings back 
+	                to our customers. Visit as at <a href="https://www.travelzap.com/" target="_blank">www.travelzap.com</a></p>
+	                
+	                <div class="row travel-zap-logo">
+	                	<div class="col-xs-6 black-bg">
+	                		<img src="assets/img/logo2.png" />
+	                	</div><!-- .col-xs-6 -->
+	                </div><!-- .row -->
+	                
+	                <div class="row promo">
+	                	<div class="col-xs-6">
+        				 <p><span class="gold">Get $150 off </span>for your next group vacation. Discount code #45454545. </br></br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here. </a></p>
+        			</div>
+	                	
+	                	<div class="col-xs-6">
+	                		<img src="assets/img/guarantee.png" />
+	                	</div><!-- .col-xs-6 -->
+	                </div><!-- .row -->
             </div><!-- end contact-agent-message -->
         </div>
     </div>

@@ -308,6 +308,11 @@ footer a {
     h6 {
         color: $main-color;
     }
+    a {
+        color: $main-color;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
 .agent-cta-title {
@@ -343,18 +348,38 @@ footer a {
 
 // ************************************* //
 // 7.0 CONTACT PAGE ======= //
+#contact {
+    margin-bottom: 50px;
+    a {
+        color: $main-color;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
 
 .contact-agent-info {
     background-color: #f6f6f6;
     padding: 35px 60px;
 }
 
-.contact-agent-message {
+.who-we-are {
     background-color: #f2f2f2;
     padding: 35px 60px;
-    h3 {
-        padding-bottom: 10px;
-    }
+}
+
+.promo {
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.black-bg img{
+    background-color: black;
+    padding: 8px 10px 10px 10px;
+}
+
+.travel-zap-logo {
+    margin-top: 30px;
 }
 
 // ************************************* //
