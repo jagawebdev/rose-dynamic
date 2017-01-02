@@ -828,6 +828,9 @@ footer a {
 #registery button {
   margin: 5px 0 0 0; }
 
+iframe {
+  border: none; }
+
 #destination h1 {
   margin-bottom: 0; }
 #destination h4 {
