@@ -9,8 +9,7 @@
 // 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= //
 // 4.0 RSVP MODAL ========= //
 // 5.0 FOOTER ========= //
-// 5.1 SITE FOOTER ========= //
-// 5.2 FIXED FOOTER ========= //
+// 5.1 FIXED FOOTER ========= //
 // 6.0 FAQ PAGE ======= //
 // 7.0 CONTACT PAGE ======= //
 // 8.0 WEDDING PAGE ======= //
@@ -167,12 +166,12 @@ ul {
 }
 
 .sample-info-text {
-    padding: 60px 60px 0;
+    padding: 40px 60px 0;
 }
 
 // ************************************* //
 // 4.0 RSVP MODAL ========= //
-#rsvpModal {
+#rsvpModal, #guestList {
     margin-top: 80px;
 }
 
@@ -249,7 +248,7 @@ textarea {
 footer {
     border-top: solid 1px $main-color;
     background-color: $footer-color;
-    padding: 50px 0;
+    padding: 30px 0;
     color: black!important;
 }
 
@@ -263,18 +262,6 @@ footer a {
     &:hover {
         color: $main-color;
     }
-}
-
-// ************************************* //
-// 5.1 SITE FOOTER ========= //
-.site-footer {
-    border-top: solid 1px $main-color;
-    margin-top: 40px;
-    padding: 20px 0 0 0;
-}
-
-.social-list ul {
-    text-decoration: none;
 }
 
 .social-list ul a {
@@ -293,7 +280,7 @@ footer a {
 }
 
 // ************************************* //
-// 5.2 FIXED FOOTER ========= //
+// 5.1 FIXED FOOTER ========= //
 #fixed-footer {
     display: inline-block !important;
     position: fixed;
@@ -546,13 +533,23 @@ iframe {
     background-color: white;
     padding-top: 15px;
     margin: 15px 0;
-    h4 {
-        color: $main-color;
-    }
 }
 
 .package-well-content {
     margin-top: -10px;
+    h4 {
+        //color: $main-color;
+    }
+    .price {
+        font-size: 20px; 
+        color: black;
+    }
+}
+
+.payment-button {
+    button {
+        margin-left: 10px;
+    }
 }
 
 // ************************************* //
@@ -561,7 +558,6 @@ iframe {
 // ************************************* //
 // 9.3 BOOKING INFORMATION ======= //
 #booking {
-    background-color: #f6f6f6;
     h1 {
         margin-bottom: 0;
     }
@@ -572,13 +568,17 @@ iframe {
 }
 
 .booking-well {
-    background-color: white;
+    background-color: #f6f6f6;
     padding: 15px;
-    border: solid 10px #f6f6f6;
+    border: solid 10px white;
     .booking-number {
         text-transform: uppercase;
         color: $main-color;
     }
+}
+
+#payment {
+    background-color: #f6f6f6;
 }
 
 

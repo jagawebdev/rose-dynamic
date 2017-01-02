@@ -382,7 +382,7 @@ header {
   border-bottom: solid 1px #b9874c;
   color: #b9874c;
   z-index: 9999;
-  padding: 30px 0 15px 0;
+  padding: 15px 0 0 0;
   display: none; }
 
 .navigation {
@@ -438,7 +438,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 41px;
+  margin-top: 37px;
   text-align: center;
   z-index: 200;
   background-color: white; }
@@ -572,9 +572,9 @@ ul {
   outline-offset: -20px; }
 
 .sample-info-text {
-  padding: 60px 60px 0; }
+  padding: 40px 60px 0; }
 
-#rsvpModal {
+#rsvpModal, #guestList {
   margin-top: 80px; }
 
 form .row {
@@ -645,7 +645,7 @@ textarea {
 footer {
   border-top: solid 1px #b9874c;
   background-color: #f0efee;
-  padding: 50px 0;
+  padding: 30px 0;
   color: black !important; }
 
 footer h5, footer h4 {
@@ -656,14 +656,6 @@ footer a {
   text-decoration: underline; }
   footer a:hover {
     color: #b9874c; }
-
-.site-footer {
-  border-top: solid 1px #b9874c;
-  margin-top: 40px;
-  padding: 20px 0 0 0; }
-
-.social-list ul {
-  text-decoration: none; }
 
 .social-list ul a {
   color: white;
@@ -866,27 +858,32 @@ iframe {
   background-color: white;
   padding-top: 15px;
   margin: 15px 0; }
-  .package-well-img h4 {
-    color: #b9874c; }
 
 .package-well-content {
   margin-top: -10px; }
+  .package-well-content .price {
+    font-size: 20px;
+    color: black; }
 
-#booking {
-  background-color: #f6f6f6; }
-  #booking h1 {
-    margin-bottom: 0; }
-  #booking h4 {
-    margin-top: 5px;
-    margin-bottom: 20px; }
+.payment-button button {
+  margin-left: 10px; }
+
+#booking h1 {
+  margin-bottom: 0; }
+#booking h4 {
+  margin-top: 5px;
+  margin-bottom: 20px; }
 
 .booking-well {
-  background-color: white;
+  background-color: #f6f6f6;
   padding: 15px;
-  border: solid 10px #f6f6f6; }
+  border: solid 10px white; }
   .booking-well .booking-number {
     text-transform: uppercase;
     color: #b9874c; }
+
+#payment {
+  background-color: #f6f6f6; }
 
 @media (min-width: 769px) and (max-width: 1012px) {
   #hero {
