@@ -968,6 +968,19 @@ iframe {
     padding: 35px 15px; }
 
   .bride-groom-sm-view {
-    margin: 30px; } }
+    margin: 30px; }
+
+  .col-padding-sm-view {
+    margin-left: 3px;
+    margin-right: 3px; }
+
+  .booking-well {
+    border: solid 10px #f6f6f6; } }
+@media screen and (max-width: 800px) {
+  .booking-steps.row-centered {
+    text-align: left; }
+
+  .booking-steps.col-centered {
+    float: left; } }
 
 /*# sourceMappingURL=main.css.map */
