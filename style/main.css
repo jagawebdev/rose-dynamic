@@ -506,6 +506,9 @@ button {
 .div-nav-space {
   margin-top: 120px; }
 
+.container-space {
+  padding: 40px 0 60px 0; }
+
 ul {
   list-style: none;
   padding-left: 0; }
@@ -575,6 +578,9 @@ ul {
 
 #count-down .number {
   font-size: 50px; }
+
+#samples-page section:nth-child(odd) {
+  background: #f6f6f6; }
 
 #sample-info {
   padding: 30px; }
@@ -699,9 +705,11 @@ footer a {
   #fixed-footer h6 {
     color: #b9874c; }
   #fixed-footer a {
-    color: #b9874c;
+    color: black;
     text-decoration: underline;
     cursor: pointer; }
+    #fixed-footer a:hover {
+      color: black; }
 
 .agent-cta-title {
   width: 100%;
@@ -729,9 +737,11 @@ footer a {
 #contact {
   margin-bottom: 50px; }
   #contact a {
-    color: #b9874c;
+    color: black;
     text-decoration: underline;
     cursor: pointer; }
+    #contact a:hover {
+      color: black; }
 
 .contact-agent-info {
   background-color: #f6f6f6;
@@ -745,6 +755,12 @@ footer a {
   background-color: white;
   margin-top: 30px;
   padding-top: 10px; }
+  .promo a {
+    color: #b9874c !important;
+    text-decoration: underline;
+    cursor: pointer; }
+    .promo a:hover {
+      color: #b9874c; }
 
 .black-bg img {
   background-color: black;
@@ -753,14 +769,14 @@ footer a {
 .travel-zap-logo {
   margin-top: 30px; }
 
+#wedding-page section:nth-child(odd) {
+  background: #f6f6f6; }
+
 #wedding {
   margin-bottom: 20px; }
   #wedding .couple-name {
     margin-bottom: 0;
     line-height: 50px; }
-
-.container-space {
-  padding: 40px 0 60px 0; }
 
 .image-list {
   display: inline-block; }
@@ -798,19 +814,14 @@ footer a {
   text-align: center;
   padding: 5px 15px; }
 
-#couple-story {
-  background-color: #f6f6f6; }
-
 #couple-story button {
   margin-top: 10px; }
 
 .fade {
   opacity: 0.5; }
 
-#maids-grooms {
-  background-color: #f6f6f6; }
-  #maids-grooms h4 {
-    color: #b9874c; }
+#maids-grooms h4 {
+  color: #b9874c; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -836,6 +847,12 @@ footer a {
 
 iframe {
   border: none; }
+
+.hashtag {
+  font-size: 24px; }
+
+#destination-page section:nth-child(even) {
+  background: #f6f6f6; }
 
 #destination h1 {
   margin-bottom: 0; }
@@ -868,6 +885,19 @@ iframe {
   #packages h1 {
     margin-bottom: 10px; }
 
+.ion-arrow-up-c {
+  color: #b9874c;
+  font-size: 20px;
+  border: solid 1px #b9874c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  padding: 6px 12px 4px;
+  background-color: #b9874c; }
+  .ion-arrow-up-c:hover {
+    background-color: transparent;
+    color: #b9874c; }
+
 .package-well-img {
   background-color: white;
   padding-top: 15px;
@@ -894,12 +924,6 @@ iframe {
   .package-well-content .price {
     font-size: 20px;
     color: black; }
-
-#booking h1 {
-  margin-bottom: 0; }
-#booking h4 {
-  margin-top: 5px;
-  margin-bottom: 20px; }
 
 .booking-well {
   background-color: #f6f6f6;
@@ -975,12 +999,20 @@ iframe {
     margin-right: 3px; }
 
   .booking-well {
-    border: solid 10px #f6f6f6; } }
+    border: solid 10px #f6f6f6; }
+
+  #booking .row {
+    margin-left: 2px;
+    margin-right: 2px; } }
 @media screen and (max-width: 800px) {
+  #booking .booking-steps {
+    background-color: #f6f6f6; }
+
   .booking-steps.row-centered {
     text-align: left; }
 
   .booking-steps.col-centered {
+    display: block;
     float: left; } }
 
 /*# sourceMappingURL=main.css.map */
