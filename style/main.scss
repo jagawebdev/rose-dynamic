@@ -63,6 +63,7 @@ button {
     background-color: $main-color;
     overflow: hidden;
     color: white;
+    margin-bottom: 3px;
     &:hover {
         color: $main-color;
         background-color: rgba(0,0,0,0.0);
@@ -127,7 +128,7 @@ ul {
 // ************************************* //
 // 3.0 Hero ========= //
 #hero {
-    background: url("../assets/img/beach-blue.jpg") center no-repeat;
+    background: url("../assets/img/white_rose.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -154,6 +155,14 @@ ul {
 .wedding-subtitle {
     margin-top: 50px;
     font-size: 26px;
+}
+
+.arrow {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 44px;
+    color: $main-color;
+    font-weight: bold;
 }
 
 // ************************************* //
@@ -195,7 +204,7 @@ ul {
 }
 
 .sample-info-text {
-    padding: 40px 60px 0;
+    padding: 20px 60px 0;
 }
 
 // ************************************* //
@@ -317,11 +326,6 @@ footer a {
     right: 0;
     float: right;
     margin: auto 15px 15px auto;
-    border: $main-color 1px solid;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background-color: white;
     h6 {
         color: $main-color;
     }
@@ -333,6 +337,14 @@ footer a {
             color: black;
         }
     }
+}
+
+.agent-cta {
+    border: $main-color 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .agent-cta-title {
@@ -351,8 +363,50 @@ footer a {
 }
 
 .agent-cta-title .title1 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 5px;
+    text-transform: uppercase;
+}
+
+.price-match {
+    width: 100%;
+    background-color: #d84c26;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 20px 0 7px 0;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 13px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.price-match .title1 {
+    font-size: 25px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+
+.price-match .title2 {
+    margin-bottom: 0;
+    letter-spacing: 9px;
+    padding-left: 2px;
+    text-transform: uppercase;
+}
+
+.price-match .title3 {
+    line-height: 0px;
+}
+
+#price-match-content {
+    padding: 5px 10px 0;
+    margin: auto;
+    width: 160px;
+    height: auto;
+    background-color: white;
+    color: black;
 }
 
 // ************************************* //
@@ -402,6 +456,9 @@ footer a {
             color: $main-color;
         }
     }
+    img {
+        max-width: 150px;
+    }
 }
 
 .black-bg img{
@@ -411,6 +468,7 @@ footer a {
 
 .travel-zap-logo {
     margin-top: 30px;
+    max-width: 400px;
 }
 
 // ************************************* //
@@ -515,10 +573,6 @@ footer a {
 // ************************************* //
 // 8.4 REGISTERY ======= //
 
-#registery button{
-    margin: 5px 0 0 0;
-}
-
 // ************************************* //
 // 8.5 GUEST LIST ======= //
 
@@ -590,7 +644,7 @@ iframe {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    padding: 2px 3px 1px;
+    padding: 0px 6px 0px;
     background-color: $main-color;
     &:hover {
         background-color: rgba(0,0,0,0.0);
@@ -639,7 +693,6 @@ iframe {
     background-color: #f6f6f6;
     padding: 15px;
     border: solid 10px white;
-    min-height: 150px;
     .booking-number {
         text-transform: uppercase;
         color: $main-color;
@@ -736,12 +789,17 @@ iframe {
     }
     
     .booking-well {
-        border: solid 10px #f6f6f6;
+        border: solid 10px white;
+        width: 100%;
     }
     
     #booking .row {
         margin-left: 2px;
         margin-right: 2px;
+    }
+    
+    .arrow {
+        display: none;
     }
 }
 
