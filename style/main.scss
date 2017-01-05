@@ -584,14 +584,13 @@ iframe {
 }
 
 .ion-arrow-up-c {
-    color: $main-color;
+    color: white;
     font-size: 20px;
-    //font-weight: bold;
     border: solid 1px $main-color;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    padding: 6px 12px 4px ;
+    padding: 2px 3px 1px;
     background-color: $main-color;
     &:hover {
         background-color: rgba(0,0,0,0.0);
@@ -640,6 +639,7 @@ iframe {
     background-color: #f6f6f6;
     padding: 15px;
     border: solid 10px white;
+    min-height: 150px;
     .booking-number {
         text-transform: uppercase;
         color: $main-color;

@@ -886,13 +886,13 @@ iframe {
     margin-bottom: 10px; }
 
 .ion-arrow-up-c {
-  color: #b9874c;
+  color: white;
   font-size: 20px;
   border: solid 1px #b9874c;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  padding: 6px 12px 4px;
+  padding: 2px 3px 1px;
   background-color: #b9874c; }
   .ion-arrow-up-c:hover {
     background-color: transparent;
@@ -928,7 +928,8 @@ iframe {
 .booking-well {
   background-color: #f6f6f6;
   padding: 15px;
-  border: solid 10px white; }
+  border: solid 10px white;
+  min-height: 150px; }
   .booking-well .booking-number {
     text-transform: uppercase;
     color: #b9874c; }
