@@ -381,6 +381,11 @@ footer a {
     &:hover {
         cursor: pointer;
     }
+    img {
+        width: 130px;
+        margin: auto;
+        display: block;
+    }
 }
 
 .price-match .title1 {
@@ -409,13 +414,14 @@ footer a {
 #price-match-content {
     padding: 5px 10px 0;
     margin: auto;
-    width: 145px;
+    width: 155px;
     height: auto;
     background-color: white;
     color: black;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    border: $main-color 1px solid;
 }
 
 // ************************************* //
@@ -708,6 +714,14 @@ iframe {
     }
 }
 
+.para-bottom {
+    margin-bottom: 57px;
+}
+
+.para-bottom2 {
+    margin-bottom: 37px;
+}
+
 #payment {
     background-color: #f6f6f6;
     button {
@@ -824,5 +838,11 @@ iframe {
     .booking-steps.col-centered {
         display: block;
         float: left;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .para-bottom2 {
+        margin-bottom: 56px;
     }
 }

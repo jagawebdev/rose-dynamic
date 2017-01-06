@@ -750,6 +750,10 @@ footer a {
   font-size: 13px; }
   .price-match:hover {
     cursor: pointer; }
+  .price-match img {
+    width: 130px;
+    margin: auto;
+    display: block; }
 
 .price-match .title1 {
   font-size: 25px;
@@ -774,13 +778,14 @@ footer a {
 #price-match-content {
   padding: 5px 10px 0;
   margin: auto;
-  width: 145px;
+  width: 155px;
   height: auto;
   background-color: white;
   color: black;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  border: #b9874c 1px solid; }
 
 .faq-content h5 {
   color: #b9874c; }
@@ -987,6 +992,12 @@ iframe {
     text-transform: uppercase;
     color: #b9874c; }
 
+.para-bottom {
+  margin-bottom: 57px; }
+
+.para-bottom2 {
+  margin-bottom: 37px; }
+
 #payment {
   background-color: #f6f6f6; }
   #payment button {
@@ -1072,5 +1083,8 @@ iframe {
   .booking-steps.col-centered {
     display: block;
     float: left; } }
+@media screen and (max-width: 991px) {
+  .para-bottom2 {
+    margin-bottom: 56px; } }
 
 /*# sourceMappingURL=main.css.map */
