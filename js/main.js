@@ -39,4 +39,13 @@ $(window).scroll(function(){
             scrollTop: $("#packages").offset().top
         }, 2000);
     });
+    
+    /**
+    * Scroll slow effect to #booking
+    */
+    $(".scroll-to").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#booking").offset().top
+        }, 2000);
+    });
 });

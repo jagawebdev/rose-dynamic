@@ -787,6 +787,54 @@ footer a {
   border-radius: 6px;
   border: #b9874c 1px solid; }
 
+#fixed-footer-sm {
+  display: inline-block !important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  #fixed-footer-sm a {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer; }
+    #fixed-footer-sm a:hover {
+      color: black; }
+
+.agent-cta-sm {
+  border: #b9874c 1px solid;
+  background-color: white;
+  padding-top: 8px; }
+
+.agent-cta-title-sm {
+  width: 35px;
+  background-color: #b9874c;
+  color: white;
+  padding: 3px 5px; }
+
+.price-match-sm {
+  margin-bottom: 5px;
+  margin-left: 1px;
+  font-size: 13px;
+  background-color: #b9874c;
+  color: white;
+  padding: 4px 5px 3px; }
+  .price-match-sm:hover {
+    cursor: pointer; }
+
+.price-match-button {
+  padding: 1px 5px 0; }
+
+.learn-more {
+  text-decoration: underline; }
+
+#price-match-content-sm {
+  padding: 5px 10px 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
+  border: #b9874c 1px solid; }
+
 .faq-content h5 {
   color: #b9874c; }
 
@@ -1050,9 +1098,6 @@ iframe {
   .footer-nav {
     display: none; }
 
-  #fixed-footer {
-    display: none !important; }
-
   .contact-agent-info, .who-we-are {
     padding: 35px 15px; }
 
@@ -1086,5 +1131,11 @@ iframe {
 @media screen and (max-width: 991px) {
   .para-bottom2 {
     margin-bottom: 56px; } }
+@media screen and (max-width: 1025px) {
+  #fixed-footer {
+    display: none !important; } }
+@media (min-width: 1025px) {
+  #fixed-footer-sm {
+    display: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
