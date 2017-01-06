@@ -369,14 +369,14 @@ footer a {
 }
 
 .price-match {
-    width: 100%;
-    background-color: #d84c26;
+    width: 150px;
+    //background-color: #d84c26;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
     padding: 20px 0 7px 0;
+    margin: auto;
     margin-bottom: 5px;
-    color: white;
     font-size: 13px;
     &:hover {
         cursor: pointer;
@@ -397,16 +397,25 @@ footer a {
 }
 
 .price-match .title3 {
+    background-color: $main-color;
+    color: white;
     line-height: 0px;
+    padding: 2px 16px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 #price-match-content {
     padding: 5px 10px 0;
     margin: auto;
-    width: 160px;
+    width: 145px;
     height: auto;
     background-color: white;
     color: black;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 // ************************************* //

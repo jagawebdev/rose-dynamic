@@ -740,14 +740,13 @@ footer a {
   text-transform: uppercase; }
 
 .price-match {
-  width: 100%;
-  background-color: #d84c26;
+  width: 150px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 20px 0 7px 0;
+  margin: auto;
   margin-bottom: 5px;
-  color: white;
   font-size: 13px; }
   .price-match:hover {
     cursor: pointer; }
@@ -764,15 +763,24 @@ footer a {
   text-transform: uppercase; }
 
 .price-match .title3 {
-  line-height: 0px; }
+  background-color: #b9874c;
+  color: white;
+  line-height: 0px;
+  padding: 2px 16px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
 
 #price-match-content {
   padding: 5px 10px 0;
   margin: auto;
-  width: 160px;
+  width: 145px;
   height: auto;
   background-color: white;
-  color: black; }
+  color: black;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
 
 .faq-content h5 {
   color: #b9874c; }
