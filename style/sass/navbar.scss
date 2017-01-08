@@ -2,7 +2,6 @@
 
 header {
     display: block;
-    position: absolute;
     width: 100%;
     font-size: 14px;
     z-index: 200;
@@ -14,7 +13,6 @@ header {
     display: block;
 	top: 0px;
 	width: 100%; 
-	font-size: 14px;
 	background-color: white;
 	border-bottom: solid 1px $main-color;
 	color: $main-color;
@@ -28,6 +26,7 @@ header {
     position: relative;
     margin: auto;
     color: $main-color;
+    text-align: center;
     font-family: 'Josefin Sans', Arial, sans-serif;
     a {
         color: $main-color;
@@ -52,7 +51,7 @@ header {
 .navigation-list {
     position: relative;
     display: block;
-    float: right;
+    text-align: center;
     ul {
         list-style: none;
         li {
@@ -68,13 +67,8 @@ header {
 
 .hamburger {
     display: none;
-    //position: relative;
     color: $main-color;
-    font-size: 25px;
     line-height: 0px;
-    padding: 0 15px 0 0;
-    float: right;
-    text-align: right;
     z-index: 300;
     &:hover {
         cursor: pointer;
@@ -87,7 +81,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    margin-top: 37px;
+    margin-top: 21px;
     text-align: center;
     z-index: 200;
     background-color: white;
