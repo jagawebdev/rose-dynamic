@@ -377,8 +377,8 @@ header {
   top: 0px;
   width: 100%;
   background-color: white;
-  border-bottom: solid 1px #93cacb;
-  color: #93cacb;
+  border-bottom: solid 1px #888888;
+  color: #888888;
   z-index: 9999;
   padding: 15px 0 0 0;
   display: none; }
@@ -387,11 +387,11 @@ header {
   display: block;
   position: relative;
   margin: auto;
-  color: #93cacb;
+  color: #888888;
   text-align: center;
   font-family: 'Josefin Sans', Arial, sans-serif; }
   .navigation a {
-    color: #93cacb;
+    color: #888888;
     text-decoration: none;
     letter-spacing: 1px; }
     .navigation a:hover {
@@ -421,7 +421,7 @@ header {
 
 .hamburger {
   display: none;
-  color: #93cacb;
+  color: #888888;
   line-height: 0px;
   z-index: 300; }
   .hamburger:hover {
@@ -446,9 +446,9 @@ header {
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      color: #93cacb; }
+      color: #888888; }
       .drop-menu ul a:hover {
-        color: #93cacb; }
+        color: #888888; }
 
 @media screen and (max-width: 770px) {
   .navigation {
@@ -481,29 +481,16 @@ body {
 
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
-  color: #93cacb;
+  color: #888888;
   font-size: 35px; }
 
 .first-p {
   margin: 0; }
 
-a button {
-  position: relative;
-  text-transform: uppercase;
-  border: solid 1px #93cacb;
-  padding: 5px 10px 3px 10px;
-  background-color: white;
-  overflow: hidden;
-  color: #main-color;
-  margin-bottom: 3px; }
-  a button:hover {
-    color: white;
-    background-color: #93cacb; }
-
 button {
   position: relative;
   text-transform: uppercase;
-  border: solid 1px #93cacb;
+  border: solid 1px #888888;
   padding: 5px 10px 3px 10px;
   background-color: white;
   overflow: hidden;
@@ -511,13 +498,13 @@ button {
   margin-bottom: 3px; }
   button:hover {
     color: white;
-    background-color: #93cacb; }
+    background-color: #888888; }
 
 .bold {
   font-weight: bold; }
 
 .gold {
-  color: #93cacb; }
+  color: #888888; }
 
 .div-nav-space {
   margin-top: 120px; }
@@ -556,33 +543,41 @@ ul {
   /* inline-block space fix */
   margin-right: -4px; }
 
+.fancy-icon {
+  width: 200px;
+  margin: auto; }
+
 #hero {
-  background: url("../assets/img/beach3.jpg") center no-repeat;
+  background: url("../assets/img/beach2.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
   height: auto;
   font-family: 'Great Vibes', cursive;
-  color: #93cacb;
-  padding-top: 220px; }
+  color: #888888;
+  padding: 50px 0; }
+
+.names {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px 0; }
 
 .couple-name {
   font-family: 'Great Vibes', cursive;
-  color: #93cacb;
+  color: #888888;
   font-size: 60px;
   margin-bottom: 0px; }
 
 .wedding-subtitle {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 15px; }
 
 #count-down {
   padding: 40px 0 20px 0;
   font-family: 'Great Vibes', cursive;
-  color: #93cacb; }
+  color: #888888; }
 
 #count-down .label {
   font-family: 'Raleway', Helvetica, sans-serif;
-  color: #93cacb;
+  color: #888888;
   font-size: 12px;
   font-weight: 100;
   text-transform: uppercase; }
@@ -614,7 +609,7 @@ label {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #93cacb; }
+  color: #888888; }
 
 .form-group textarea, .form-group input {
   background-color: transparent; }
@@ -627,7 +622,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: solid 1px #93cacb;
+  border: solid 1px #888888;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -645,16 +640,16 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    border: solid 1px #93cacb; }
+    border: solid 1px #888888; }
 
 .close-button {
   font-size: 80px;
-  color: #93cacb;
+  color: #888888;
   font-weight: 100;
   line-height: 25px; }
 
 .form-control {
-  border: #93cacb 1px solid;
+  border: #888888 1px solid;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -665,35 +660,35 @@ textarea {
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
   .form-control:focus {
-    border: solid 1px #93cacb; }
+    border: solid 1px #888888; }
 
 footer {
-  border-top: solid 1px #93cacb;
+  border-top: solid 1px #888888;
   padding: 30px 0;
   color: black !important;
   font-size: 12px; }
 
 footer h5, footer h4 {
-  color: #93cacb; }
+  color: #888888; }
 
 footer a {
-  color: #93cacb;
+  color: #888888;
   text-decoration: underline; }
   footer a:hover {
-    color: #93cacb; }
+    color: #888888; }
 
 .social-list ul a {
   color: white;
   font-size: 15px;
-  border: solid 1px #93cacb;
+  border: solid 1px #888888;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 6px 12px 4px;
-  background-color: #93cacb; }
+  background-color: #888888; }
   .social-list ul a:hover {
     background-color: transparent;
-    color: #93cacb; }
+    color: #888888; }
 
 #fixed-footer {
   display: inline-block !important;
@@ -703,7 +698,7 @@ footer a {
   float: right;
   margin: auto 15px 15px auto; }
   #fixed-footer h6 {
-    color: #93cacb; }
+    color: #888888; }
   #fixed-footer a {
     color: black;
     text-decoration: underline;
@@ -712,7 +707,7 @@ footer a {
       color: black; }
 
 .agent-cta {
-  border: #93cacb 1px solid;
+  border: #888888 1px solid;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -720,7 +715,7 @@ footer a {
 
 .agent-cta-title {
   width: 100%;
-  background-color: #93cacb;
+  background-color: #888888;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -764,7 +759,7 @@ footer a {
   text-transform: uppercase; }
 
 .price-match .title3 {
-  background-color: #93cacb;
+  background-color: #888888;
   color: white;
   line-height: 0px;
   padding: 2px 16px;
@@ -782,7 +777,7 @@ footer a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  border: #93cacb 1px solid; }
+  border: #888888 1px solid; }
 
 #fixed-footer-sm {
   display: inline-block !important;
@@ -798,13 +793,13 @@ footer a {
       color: black; }
 
 .agent-cta-sm {
-  border: #93cacb 1px solid;
+  border: #888888 1px solid;
   background-color: white;
   padding-top: 8px; }
 
 .agent-cta-title-sm {
   width: 35px;
-  background-color: #93cacb;
+  background-color: #888888;
   color: white;
   padding: 3px 5px; }
 
@@ -812,7 +807,7 @@ footer a {
   margin-bottom: 5px;
   margin-left: 1px;
   font-size: 13px;
-  background-color: #93cacb;
+  background-color: #888888;
   color: white;
   padding: 4px 5px 3px; }
   .price-match-sm:hover {
@@ -830,10 +825,10 @@ footer a {
   height: auto;
   background-color: white;
   color: black;
-  border: #93cacb 1px solid; }
+  border: #888888 1px solid; }
 
 .faq-content h5 {
-  color: #93cacb; }
+  color: #888888; }
 
 .faq-content p {
   margin-bottom: 30px; }
@@ -860,11 +855,11 @@ footer a {
   margin-top: 30px;
   padding-top: 10px; }
   .promo a {
-    color: #93cacb !important;
+    color: #888888 !important;
     text-decoration: underline;
     cursor: pointer; }
     .promo a:hover {
-      color: #93cacb; }
+      color: #888888; }
   .promo img {
     max-width: 150px; }
 
@@ -926,7 +921,7 @@ footer a {
   opacity: 0.5; }
 
 #maids-grooms h4 {
-  color: #93cacb; }
+  color: #888888; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -969,7 +964,7 @@ iframe {
   width: 250px;
   height: 150px;
   overflow: hidden;
-  outline: 1px solid #93cacb;
+  outline: 1px solid #888888;
   outline-offset: -15px; }
 
 .bthumbnail img {
@@ -990,15 +985,15 @@ iframe {
 .ion-arrow-up-c {
   color: white;
   font-size: 20px;
-  border: solid 1px #93cacb;
+  border: solid 1px #888888;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 0px 6px 0px;
-  background-color: #93cacb; }
+  background-color: #888888; }
   .ion-arrow-up-c:hover {
     background-color: transparent;
-    color: #93cacb; }
+    color: #888888; }
 
 .package-well-img {
   background-color: white;
@@ -1033,7 +1028,7 @@ iframe {
   border: solid 10px white; }
   .booking-well .booking-number {
     text-transform: uppercase;
-    color: #93cacb; }
+    color: #888888; }
 
 .para-bottom {
   margin-bottom: 57px; }

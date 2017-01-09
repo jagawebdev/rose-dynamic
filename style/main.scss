@@ -42,6 +42,7 @@ body {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
     background-color: #f6f6f6;
+    //background: url("../assets/img/arrows.jpg");
 }
 
 .white-container {
@@ -63,21 +64,6 @@ h1, h2, h3 {
 
 .first-p {
     margin: 0;
-}
-
-a button {
-    position: relative;
-    text-transform: uppercase;
-    border: solid 1px $main-color;
-    padding: 5px 10px 3px 10px;
-    background-color: white;
-    overflow: hidden;
-    color: #main-color;
-    margin-bottom: 3px;
-    &:hover {
-        color: white;
-        background-color: $main-color;
-    }
 }
 
 button {
@@ -150,16 +136,26 @@ ul {
     margin-right: -4px;
 }
 
+.fancy-icon {
+    width: 200px;
+    margin: auto;
+}
+
 // ************************************* //
 // 3.0 Hero ========= //
 #hero {
-    background: url("../assets/img/beach3.jpg") center no-repeat;
+    background: url("../assets/img/beach2.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
     font-family: 'Great Vibes', cursive;
     color: $main-color;
-    padding-top: 220px;
+    padding: 50px 0;
+}
+
+.names {
+    background-color: rgba(255,255,255,0.7);
+    padding: 50px 0;
 }
 
 .couple-name {
@@ -170,7 +166,7 @@ ul {
 }
 
 .wedding-subtitle {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
