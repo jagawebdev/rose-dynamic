@@ -377,8 +377,8 @@ header {
   top: 0px;
   width: 100%;
   background-color: white;
-  border-bottom: solid 1px black;
-  color: black;
+  border-bottom: solid 1px #93cacb;
+  color: #93cacb;
   z-index: 9999;
   padding: 15px 0 0 0;
   display: none; }
@@ -387,11 +387,11 @@ header {
   display: block;
   position: relative;
   margin: auto;
-  color: black;
+  color: #93cacb;
   text-align: center;
   font-family: 'Josefin Sans', Arial, sans-serif; }
   .navigation a {
-    color: black;
+    color: #93cacb;
     text-decoration: none;
     letter-spacing: 1px; }
     .navigation a:hover {
@@ -421,7 +421,7 @@ header {
 
 .hamburger {
   display: none;
-  color: black;
+  color: #93cacb;
   line-height: 0px;
   z-index: 300; }
   .hamburger:hover {
@@ -446,9 +446,9 @@ header {
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      color: black; }
+      color: #93cacb; }
       .drop-menu ul a:hover {
-        color: black; }
+        color: #93cacb; }
 
 @media screen and (max-width: 770px) {
   .navigation {
@@ -480,32 +480,44 @@ body {
   max-width: 900px; }
 
 h1, h2, h3 {
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  color: black;
-  text-transform: uppercase; }
+  font-family: 'Great Vibes', cursive;
+  color: #93cacb;
+  font-size: 35px; }
 
 .first-p {
   margin: 0; }
 
+a button {
+  position: relative;
+  text-transform: uppercase;
+  border: solid 1px #93cacb;
+  padding: 5px 10px 3px 10px;
+  background-color: white;
+  overflow: hidden;
+  color: #main-color;
+  margin-bottom: 3px; }
+  a button:hover {
+    color: white;
+    background-color: #93cacb; }
+
 button {
   position: relative;
-  font-family: 'Josefin Sans', Arial, sans-serif;
   text-transform: uppercase;
-  border: solid 1px black;
+  border: solid 1px #93cacb;
   padding: 5px 10px 3px 10px;
-  background-color: black;
+  background-color: white;
   overflow: hidden;
-  color: white;
+  color: #main-color;
   margin-bottom: 3px; }
   button:hover {
-    color: black;
-    background-color: transparent; }
+    color: white;
+    background-color: #93cacb; }
 
 .bold {
   font-weight: bold; }
 
 .gold {
-  color: black; }
+  color: #93cacb; }
 
 .div-nav-space {
   margin-top: 120px; }
@@ -549,26 +561,28 @@ ul {
   background-size: cover;
   width: 100%;
   height: auto;
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  color: black;
+  font-family: 'Great Vibes', cursive;
+  color: #93cacb;
   padding-top: 220px; }
 
 .couple-name {
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  color: black;
-  font-size: 40px; }
+  font-family: 'Great Vibes', cursive;
+  color: #93cacb;
+  font-size: 60px;
+  margin-bottom: 0px; }
 
 .wedding-subtitle {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px; }
 
 #count-down {
   padding: 40px 0 20px 0;
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  color: black; }
+  font-family: 'Great Vibes', cursive;
+  color: #93cacb; }
 
 #count-down .label {
-  color: black;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  color: #93cacb;
   font-size: 12px;
   font-weight: 100;
   text-transform: uppercase; }
@@ -600,7 +614,7 @@ label {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
-  color: black; }
+  color: #93cacb; }
 
 .form-group textarea, .form-group input {
   background-color: transparent; }
@@ -613,7 +627,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: solid 1px black;
+  border: solid 1px #93cacb;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -631,16 +645,16 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    border: solid 1px black; }
+    border: solid 1px #93cacb; }
 
 .close-button {
   font-size: 80px;
-  color: black;
+  color: #93cacb;
   font-weight: 100;
   line-height: 25px; }
 
 .form-control {
-  border: black 1px solid;
+  border: #93cacb 1px solid;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -651,35 +665,35 @@ textarea {
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
   .form-control:focus {
-    border: solid 1px black; }
+    border: solid 1px #93cacb; }
 
 footer {
-  border-top: solid 1px black;
+  border-top: solid 1px #93cacb;
   padding: 30px 0;
   color: black !important;
   font-size: 12px; }
 
 footer h5, footer h4 {
-  color: black; }
+  color: #93cacb; }
 
 footer a {
-  color: black;
+  color: #93cacb;
   text-decoration: underline; }
   footer a:hover {
-    color: black; }
+    color: #93cacb; }
 
 .social-list ul a {
   color: white;
   font-size: 15px;
-  border: solid 1px black;
+  border: solid 1px #93cacb;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 6px 12px 4px;
-  background-color: black; }
+  background-color: #93cacb; }
   .social-list ul a:hover {
     background-color: transparent;
-    color: black; }
+    color: #93cacb; }
 
 #fixed-footer {
   display: inline-block !important;
@@ -689,7 +703,7 @@ footer a {
   float: right;
   margin: auto 15px 15px auto; }
   #fixed-footer h6 {
-    color: black; }
+    color: #93cacb; }
   #fixed-footer a {
     color: black;
     text-decoration: underline;
@@ -698,7 +712,7 @@ footer a {
       color: black; }
 
 .agent-cta {
-  border: black 1px solid;
+  border: #93cacb 1px solid;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -706,7 +720,7 @@ footer a {
 
 .agent-cta-title {
   width: 100%;
-  background-color: black;
+  background-color: #93cacb;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -750,7 +764,7 @@ footer a {
   text-transform: uppercase; }
 
 .price-match .title3 {
-  background-color: black;
+  background-color: #93cacb;
   color: white;
   line-height: 0px;
   padding: 2px 16px;
@@ -768,7 +782,7 @@ footer a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  border: black 1px solid; }
+  border: #93cacb 1px solid; }
 
 #fixed-footer-sm {
   display: inline-block !important;
@@ -784,13 +798,13 @@ footer a {
       color: black; }
 
 .agent-cta-sm {
-  border: black 1px solid;
+  border: #93cacb 1px solid;
   background-color: white;
   padding-top: 8px; }
 
 .agent-cta-title-sm {
   width: 35px;
-  background-color: black;
+  background-color: #93cacb;
   color: white;
   padding: 3px 5px; }
 
@@ -798,7 +812,7 @@ footer a {
   margin-bottom: 5px;
   margin-left: 1px;
   font-size: 13px;
-  background-color: black;
+  background-color: #93cacb;
   color: white;
   padding: 4px 5px 3px; }
   .price-match-sm:hover {
@@ -816,10 +830,10 @@ footer a {
   height: auto;
   background-color: white;
   color: black;
-  border: black 1px solid; }
+  border: #93cacb 1px solid; }
 
 .faq-content h5 {
-  color: black; }
+  color: #93cacb; }
 
 .faq-content p {
   margin-bottom: 30px; }
@@ -846,11 +860,11 @@ footer a {
   margin-top: 30px;
   padding-top: 10px; }
   .promo a {
-    color: black !important;
+    color: #93cacb !important;
     text-decoration: underline;
     cursor: pointer; }
     .promo a:hover {
-      color: black; }
+      color: #93cacb; }
   .promo img {
     max-width: 150px; }
 
@@ -865,11 +879,10 @@ footer a {
 #wedding-page section:nth-child(odd) {
   background: #f6f6f6; }
 
-#wedding {
-  margin-bottom: 20px; }
-  #wedding .couple-name {
-    margin-bottom: 0;
-    line-height: 50px; }
+#wedding .couple-name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 50px; }
 
 .image-list {
   display: inline-block; }
@@ -879,8 +892,8 @@ footer a {
 
 .wthumbnail {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 170px;
+  height: 170px;
   overflow: hidden; }
 
 .wthumbnail img {
@@ -902,10 +915,9 @@ footer a {
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   color: white;
-  font-size: 16px;
-  margin: 105px 0 auto 58px;
+  margin: 65px 0 auto 30px;
   text-align: center;
-  padding: 5px 15px; }
+  padding: 5px; }
 
 #couple-story button {
   margin-top: 10px; }
@@ -914,7 +926,7 @@ footer a {
   opacity: 0.5; }
 
 #maids-grooms h4 {
-  color: black; }
+  color: #93cacb; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -954,11 +966,11 @@ iframe {
 
 .bthumbnail {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   overflow: hidden;
-  outline: 1px solid black;
-  outline-offset: -20px; }
+  outline: 1px solid #93cacb;
+  outline-offset: -15px; }
 
 .bthumbnail img {
   position: absolute;
@@ -978,15 +990,15 @@ iframe {
 .ion-arrow-up-c {
   color: white;
   font-size: 20px;
-  border: solid 1px black;
+  border: solid 1px #93cacb;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 0px 6px 0px;
-  background-color: black; }
+  background-color: #93cacb; }
   .ion-arrow-up-c:hover {
     background-color: transparent;
-    color: black; }
+    color: #93cacb; }
 
 .package-well-img {
   background-color: white;
@@ -1021,7 +1033,7 @@ iframe {
   border: solid 10px white; }
   .booking-well .booking-number {
     text-transform: uppercase;
-    color: black; }
+    color: #93cacb; }
 
 .para-bottom {
   margin-bottom: 57px; }

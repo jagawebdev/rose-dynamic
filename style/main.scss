@@ -56,28 +56,42 @@ body {
 // ************************************* //
 // 2.0 Global========= //
 h1, h2, h3 {
-    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-family: 'Great Vibes', cursive;
     color: $main-color;
-    text-transform: uppercase;
+    font-size: 35px;
 }
 
 .first-p {
     margin: 0;
 }
 
-button {
+a button {
     position: relative;
-    font-family: 'Josefin Sans', Arial, sans-serif;
     text-transform: uppercase;
     border: solid 1px $main-color;
     padding: 5px 10px 3px 10px;
-    background-color: $main-color;
+    background-color: white;
     overflow: hidden;
-    color: white;
+    color: #main-color;
     margin-bottom: 3px;
     &:hover {
-        color: $main-color;
-        background-color: rgba(0,0,0,0.0);
+        color: white;
+        background-color: $main-color;
+    }
+}
+
+button {
+    position: relative;
+    text-transform: uppercase;
+    border: solid 1px $main-color;
+    padding: 5px 10px 3px 10px;
+    background-color: white;
+    overflow: hidden;
+    color: #main-color;
+    margin-bottom: 3px;
+    &:hover {
+        color: white;
+        background-color: $main-color;
     }
 }
 
@@ -143,19 +157,20 @@ ul {
     background-size: cover;
     width: 100%;
     height: auto;
-    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-family: 'Great Vibes', cursive;
     color: $main-color;
     padding-top: 220px;
 }
 
 .couple-name {
-    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-family: 'Great Vibes', cursive;
     color: $main-color;
-    font-size: 40px;
+    font-size: 60px;
+    margin-bottom: 0px;
 }
 
 .wedding-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
@@ -163,11 +178,12 @@ ul {
 // 3.1 COUNT DOWN ========= //
 #count-down {
     padding: 40px 0 20px 0;
-    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-family: 'Great Vibes', cursive;
     color: $main-color;
 }
 
 #count-down .label {
+    font-family: 'Raleway', Helvetica, sans-serif;
     color: $main-color;
     font-size: 12px;
     font-weight: 100;
@@ -543,8 +559,8 @@ footer a {
 }
 
 #wedding {
-    margin-bottom: 20px;
     .couple-name {
+        margin-top: 10px;
         margin-bottom: 0;
         line-height: 50px;
     }
@@ -562,8 +578,8 @@ footer a {
 
 .wthumbnail {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 170px;
+  height: 170px;
   overflow: hidden;
 }
 
@@ -587,10 +603,9 @@ footer a {
     background-color: rgba(0,0,0,0.8);
     position: absolute;
     color: white;
-    font-size: 16px;
-    margin: 105px 0 auto 58px;
+    margin: 65px 0 auto 30px;
     text-align: center;
-    padding: 5px 15px;
+    padding: 5px;
 }
 
 // ************************************* //
@@ -673,11 +688,11 @@ iframe {
 
 .bthumbnail {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     overflow: hidden;
     outline: 1px solid $main-color;
-    outline-offset: -20px;
+    outline-offset: -15px;
 }
 
 .bthumbnail img {
