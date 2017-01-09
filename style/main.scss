@@ -42,7 +42,7 @@ body {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
     background-color: #f6f6f6;
-    //background: url("../assets/img/arrows.jpg");
+    background: url("../assets/img/background/paper_fibers.png");
 }
 
 .white-container {
@@ -70,10 +70,12 @@ button {
     position: relative;
     text-transform: uppercase;
     border: solid 1px $main-color;
-    padding: 5px 10px 3px 10px;
-    background-color: white;
-    overflow: hidden;
-    color: #main-color;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    padding: 3px 10px 1px 10px;
+    background-color: rgba(255,255,255,0);
+    color: $main-color;
     margin-bottom: 3px;
     &:hover {
         color: white;
@@ -173,7 +175,7 @@ ul {
 // ************************************* //
 // 3.1 COUNT DOWN ========= //
 #count-down {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 0 0;
     font-family: 'Great Vibes', cursive;
     color: $main-color;
 }
@@ -195,7 +197,7 @@ ul {
 #samples-page {
     section:nth-child(odd) {
     background: #f6f6f6;
-}
+    }
 }
 
 #sample-info {
@@ -222,7 +224,6 @@ form .row {
 
 label {
     display: block;
-    font-family: 'Josefin Sans', Arial, sans-serif;
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
@@ -499,6 +500,7 @@ footer a {
 // 7.0 CONTACT PAGE ======= //
 #contact {
     margin-bottom: 50px;
+    padding: 0 15px;
     a {
         color: black;
         text-decoration: underline;
@@ -666,7 +668,7 @@ iframe {
 #destination-page {
     section:nth-child(even) {
     background: #f6f6f6;
-}
+    }
 }
 
 #destination {
@@ -729,7 +731,7 @@ iframe {
 .package-well-img {
     background-color: white;
     padding-top: 15px;
-    margin: 15px 0;
+    margin: 15px 15px;
 }
 
 .pthumbnail {
@@ -774,11 +776,11 @@ iframe {
 }
 
 .para-bottom {
-    margin-bottom: 57px;
+    margin-bottom: 78px;
 }
 
 .para-bottom2 {
-    margin-bottom: 37px;
+    margin-bottom: 57px;
 }
 
 #payment {
@@ -879,6 +881,14 @@ iframe {
     .arrow {
         display: none;
     }
+    
+    .para-bottom {
+        margin-bottom: 10px;
+    }
+    
+    .para-bottom2 {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -896,9 +906,13 @@ iframe {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
+    .para-bottom {
+        margin-bottom: 57px;
+    }
+    
     .para-bottom2 {
-        margin-bottom: 56px;
+        margin-bottom: 37px;
     }
 }
 
