@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!--GOOGLE FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Great+Vibes|Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet"> 
 	
 	<!--ICONS-->
 	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -30,52 +30,16 @@
 </head>
 
 <body>
-<div class="white-container container">
-	<!-- PICTURE HEADER ====================================== -->
-	<section>
-		<div class="header-pics"><img src="assets/img/header/gold-dot.jpg" /></div>
-	</section>
-	<!-- HEADER ====================================== -->
-	<header>
-        <navbar class="navigation">
-                <div class="navigation-list">
-                    <ul>
-                        <li><a href="#/landing#hero">Home</a></li>
-                        <li><a href="#/wedding#wedding">Wedding</a></li>
-                        <li><a href="#/destination#destination">Resort</a></li>
-                        <li><a href="#/contact#contact">Contact</a></li>
-                        <li><a href="#/faq#faq">Faq</a></li>
-                        <li><a href="#/destination#booking"><button class="book-now">Book Now!</button></a></li>
-                    </ul>
-                </div><!-- end navigation-list -->
-                
-                <a href="#">
-                    <div class="hamburger">MENU
-                        <div class="drop-menu">
-                            <ul class="drop-ul">
-                                <li><a href="#/landing#hero" class="drop-link">Home</a></li>
-                                <li><a href="#/wedding#wedding" class="drop-link">Wedding</a></li>
-                                <li><a href="#/destination#destination" class="drop-link">Resort</a></li>
-                                <li><a href="#/contact#contact" class="drop-link">Contact</a></li>
-                                <li><a href="#/faq#faq" class="drop-link">Faq</a></li>
-                                <li><a href="#/destination#booking" class="drop-link bold">Book Now!</a></li>
-                            </ul>
-                        </div>
-                   </div>
-               </a>
-        </navbar>
-    </header><!-- end header -->
-    
     <!-- MENU BAR THAT BECOME VISIBLE WHEN SCROLLED ====================================== -->
-    <div id="menu">
+	<div id="menu">
         <navbar class="navigation">
                 <div class="navigation-list">
                     <ul>
-                        <li><a href="#/landing#hero">Home</a></li>
-                        <li><a href="#/wedding#wedding">Wedding</a></li>
-                        <li><a href="#/destination#destination">Resort</a></li>
-                        <li><a href="#/contact#contact">Contact</a></li>
-                        <li><a href="#/faq#faq">Faq</a></li>
+                        <li><a href="#/landing">Home</a></li>
+                        <li><a href="#/wedding">Wedding</a></li>
+                        <li><a href="#/destination">Resort</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                        <li><a href="#/faq">Faq</a></li>
                         <li><a href="#/destination#booking"><button class="book-now">Book Now!</button></a></li>
                     </ul>
                 </div><!-- end navigation-list -->
@@ -84,11 +48,11 @@
                     <div class="hamburger">MENU
                         <div class="drop-menu">
                             <ul class="drop-ul">
-                                <li><a href="#/landing#hero" class="drop-link">Home</a></li>
-                                <li><a href="#/wedding#wedding" class="drop-link">Wedding</a></li>
-                                <li><a href="#/destination#destination" class="drop-link">Resort</a></li>
-                                <li><a href="#/contact#contact" class="drop-link">Contact</a></li>
-                                <li><a href="#/faq#faq" class="drop-link">Faq</a></li>
+                                <li><a href="#/landing" class="drop-link">Home</a></li>
+                                <li><a href="#/wedding" class="drop-link">Wedding</a></li>
+                                <li><a href="#/destination" class="drop-link">Resort</a></li>
+                                <li><a href="#/contact" class="drop-link">Contact</a></li>
+                                <li><a href="#/faq" class="drop-link">Faq</a></li>
                                 <li><a href="#/destination#booking" class="drop-link bold">Book Now!</a></li>
                             </ul>
                         </div>
@@ -97,8 +61,45 @@
         </navbar>
     </div><!-- end header -->
     
+<div class="white-container container">
+	<!-- PICTURE HEADER ====================================== -->
+	<section>
+		<div class="header-pics"><img src="assets/img/header/gold-dot.jpg" /></div>
+	</section>
+	
+	<!-- HEADER ====================================== -->
+	<header>
+        <navbar class="navigation">
+                <div class="navigation-list">
+                    <ul>
+                        <li><a href="#/landing">Home</a></li>
+                        <li><a href="#/wedding">Wedding</a></li>
+                        <li><a href="#/destination">Resort</a></li>
+                        <li><a href="#/contact">Contact</a></li>
+                        <li><a href="#/faq">Faq</a></li>
+                        <li><a href="#/destination#booking"><button class="book-now">Book Now!</button></a></li>
+                    </ul>
+                </div><!-- end navigation-list -->
+                
+                <a href="#">
+                    <div class="hamburger">MENU
+                        <div class="drop-menu">
+                            <ul class="drop-ul">
+                                <li><a href="#/landing" class="drop-link">Home</a></li>
+                                <li><a href="#/wedding" class="drop-link">Wedding</a></li>
+                                <li><a href="#/destination" class="drop-link">Resort</a></li>
+                                <li><a href="#/contact" class="drop-link">Contact</a></li>
+                                <li><a href="#/faq" class="drop-link">Faq</a></li>
+                                <li><a href="#/destination#booking" class="drop-link bold">Book Now!</a></li>
+                            </ul>
+                        </div>
+                   </div>
+               </a>
+        </navbar>
+    </header><!-- end header -->
+    
 	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
-	<div ng-view></div>
+	<div ng-view autoscroll="true"></div>
 	
 	<!-- FOOTER ====================================== -->
 	<footer>
