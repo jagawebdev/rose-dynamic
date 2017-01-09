@@ -551,7 +551,7 @@ ul {
 
 .names {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 50px 0; }
+  padding: 50px 20px; }
 
 .couple-name {
   font-family: 'Great Vibes', cursive;
@@ -1035,9 +1035,6 @@ iframe {
     margin-left: 10px; }
 
 @media (min-width: 769px) and (max-width: 1012px) {
-  #hero {
-    padding-top: 120px; }
-
   .couple-name {
     font-size: 50px; }
 
@@ -1047,19 +1044,9 @@ iframe {
   .sample-info-text {
     padding: 0px 60px 0; } }
 @media screen and (max-width: 768px) {
-  #hero {
-    padding-top: 120px;
-    height: 500px; }
-
   .couple-name {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center; }
-
-  .couple-name-and {
-    line-height: 75px; }
-
-  .couple-name-two {
-    padding-top: 0; }
 
   #count-down {
     padding: 20px 0 10px 0; }
@@ -1077,6 +1064,9 @@ iframe {
 
   .sample-info-text {
     padding: 0 15px; }
+
+  footer {
+    padding-bottom: 45px; }
 
   .footer-nav {
     display: none; }
@@ -1123,10 +1113,10 @@ iframe {
 
   .para-bottom2 {
     margin-bottom: 37px; } }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1269px) {
   #fixed-footer {
     display: none !important; } }
-@media (min-width: 1025px) {
+@media (min-width: 1270px) {
   #fixed-footer-sm {
     display: none !important; } }
 
