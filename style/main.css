@@ -463,6 +463,9 @@ body {
   background-color: #f6f6f6;
   background: url("../assets/img/background/paper_fibers.png"); }
 
+b, strong {
+  -webkit-font-smoothing: antialiased; }
+
 .white-container {
   background-color: white;
   position: relative; }
@@ -492,6 +495,9 @@ button {
   button:hover {
     color: white;
     background-color: #af9258; }
+
+button:focus {
+  outline: 0; }
 
 .bold {
   font-weight: bold; }
@@ -956,9 +962,7 @@ iframe {
   position: relative;
   width: 250px;
   height: 150px;
-  overflow: hidden;
-  outline: 1px solid #af9258;
-  outline-offset: -15px; }
+  overflow: hidden; }
 
 .bthumbnail img {
   position: absolute;
@@ -968,12 +972,16 @@ iframe {
   width: auto;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  outline: 1px solid #af9258;
+  outline-offset: -15px; }
 
 #packages {
   background-color: #f6f6f6; }
   #packages h1 {
     margin-bottom: 10px; }
+  #packages .white {
+    border: solid 10px #f6f6f6; }
 
 .ion-arrow-up-c {
   color: white;
@@ -987,6 +995,17 @@ iframe {
   .ion-arrow-up-c:hover {
     background-color: transparent;
     color: #af9258; }
+
+.jrow-centered {
+  text-align: center;
+  display: table-row; }
+
+.jcol-centered {
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+  text-align: left;
+  padding-top: 15px; }
 
 .package-well-img {
   background-color: white;
@@ -1009,11 +1028,9 @@ iframe {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.package-well-content {
-  margin-top: -10px; }
-  .package-well-content .price {
-    font-size: 20px;
-    color: black; }
+#packages .price {
+  font-size: 20px;
+  color: black; }
 
 .booking-well {
   background-color: #f6f6f6;
@@ -1024,10 +1041,13 @@ iframe {
     color: #af9258; }
 
 .para-bottom {
-  margin-bottom: 78px; }
+  margin-bottom: 57px; }
+
+.para-bottom3 {
+  margin-bottom: 37px; }
 
 .para-bottom2 {
-  margin-bottom: 57px; }
+  margin-bottom: 37px; }
 
 #payment {
   background-color: #f6f6f6; }
@@ -1066,7 +1086,7 @@ iframe {
     padding: 0 15px; }
 
   footer {
-    padding-bottom: 45px; }
+    padding-bottom: 80px; }
 
   .footer-nav {
     display: none; }
@@ -1081,6 +1101,10 @@ iframe {
     margin-left: 3px;
     margin-right: 3px; }
 
+  .jcol-centered {
+    float: left;
+    width: 100%; }
+
   .booking-well {
     border: solid 10px white;
     width: 100%; }
@@ -1090,13 +1114,7 @@ iframe {
     margin-right: 2px; }
 
   .arrow {
-    display: none; }
-
-  .para-bottom {
-    margin-bottom: 10px; }
-
-  .para-bottom2 {
-    margin-bottom: 10px; } }
+    display: none; } }
 @media screen and (max-width: 800px) {
   #booking .booking-steps {
     background-color: #f6f6f6; }
@@ -1107,17 +1125,23 @@ iframe {
   .booking-steps.col-centered {
     display: block;
     float: left; } }
-@media (min-width: 769px) and (max-width: 991px) {
-  .para-bottom {
-    margin-bottom: 57px; }
-
+@media screen and (max-width: 991px) {
   .para-bottom2 {
+    margin-bottom: 37px; }
+
+  .para-bottom3 {
     margin-bottom: 37px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .para-bottom3 {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 1269px) {
   #fixed-footer {
     display: none !important; } }
 @media (min-width: 1270px) {
   #fixed-footer-sm {
     display: none !important; } }
+@media screen and (max-width: 360px) {
+  .pthumbnail {
+    height: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
