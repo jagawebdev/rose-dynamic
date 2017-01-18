@@ -170,7 +170,15 @@
 	
 	<!-- FIXED FOOTER FOR SMALL VIEW ====================================== -->
 	<section id="fixed-footer-sm">
-		<!-- price-guarantee footer ====================================== -->
+		<!-- agent info footer ====================================== -->
+	    <div  class="agent-cta-sm">
+	        <div class="text-center">
+		        <span class=" agent-cta-title-sm title1 ">Questions?</span> {first_name_user} | P: <a href="tel:{phone_work_user}">{phone_work_user}</a> | Text: <a href="sms:{phone_mobile_user}">{phone_mobile_user}</a> | <a href="mailto:{assigned_user_email}">{assigned_user_email}</a>
+		        <span class="price-match-sm" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample">PRICE MATCH <span class="learn-more">Learn more</span></span>
+	        </div><!-- end agent-cta-title -->
+        </div><!-- end agent-cta -->
+        
+        <!-- price-guarantee footer ====================================== -->
 	         <div class="collapse text-left" id="price-match-content-sm">
 				  <div>
 				    <p>-Found a lower price on a competitor site? We'll match it plus you still 
@@ -182,14 +190,6 @@
 			
 	        </div><!-- end price-match -->
 		
-		<!-- agent info footer ====================================== -->
-	    <div  class="agent-cta-sm">
-	        <div class="text-center">
-	            <p><span class="price-match-sm" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample">PRICE MATCH <span class="learn-more">Learn more</span></span>
-	        
-	        <span class=" agent-cta-title-sm title1 ">Questions?</span> {first_name_user} | P: <a href="tel:{phone_work_user}">{phone_work_user}</a> | Text: <a href="sms:{phone_mobile_user}">{phone_mobile_user}</a> | <a href="mailto:{assigned_user_email}">{assigned_user_email}</a></p>
-	        </div><!-- end agent-cta-title -->
-        </div><!-- end agent-cta -->
 	</section>
 </div><!-- .white-container -->
 
