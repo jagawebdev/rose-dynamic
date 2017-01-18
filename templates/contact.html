@@ -1,43 +1,45 @@
 <!-- ========== CONTACT PAGE ========== -->
+<!-- Contact Form Processing -->  
+<script src="js/contact.js"></script>
 <section id="contact">
     <div>
         <div class="row match-my-cols">
             <div class="col-sm-6 contact-agent-info">
 	                <h3>Contact the Agent</h3>
 	                <ul class="agent-info">
-	                    <li>Joanna Drake</li>
-	                    <li>Phone: 345.345.3444</li>
-	                    <li>Text: 345.345.3333</li>
-	                    <li>Email: <a href="mailto:joanna@travelzap.com">joanna@travelzap.com</a></li>
+	                    <li>{full_name_user}</li>
+	                    <li>Phone: <a href="tel:{phone_work_user}">{phone_work_user}</a></li>
+	                    <li>Text: <a href="sms:{phone_mobile_user}">{phone_mobile_user}</a></li>
+	                    <li>Email: <a href="mailto:{assigned_user_email}">{assigned_user_email}</a></li>
 	                </ul>
 	                
 	                </br>
-		            <h3>Send Message to the Agent</h3>
-	                    
-					<form method="post" class="form-horizontal contact-form" action="php/contact/contact.php">
-						<!-- Honeypot SPAM Protection -->
-						<input type="text" name="cf[honeypot]" style="display: none">
-						<!-- END Honeypot SPAM Protection -->
-	
+		            <h3>Send a Message to the Agent</h3> 
+	                <div id ="contactform">
+                    <form class="form-horizontal contact-form" role="form">
 						<div class="form-group">
-							<div class="col-md-6">
-								<input type="text" name="cf[name]" class="form-control required" placeholder="Your Name">
+							<div id="cname-group"  class="col-md-6">
+                                <label></label>                            
+								<input type="text" name="inputName" id="inputName" class="form-control required" placeholder="Your Name">
 							</div>
-							<div class="col-md-6">
-								<input type="email" name="cf[email]" class="form-control required email" placeholder="Your Email">
+							<div id="cemail-group"  class="col-md-6">
+                                <label></label>                            
+								<input type="email" name="inputEmail" id="inputEmail" class="form-control required email" placeholder="Your Email">
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-md-6">
-								<input type="phone" name="cf[phone]" class="form-control number" placeholder="Your Phone #">
+							<div id="cphone-group" class="col-md-6">
+                                <label></label>
+								<input type="phone" name="inputPhone" id="inputPhone" class="form-control number" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number." placeholder="Your Phone #">
 							</div>
 							<div class="col-md-6">
-								<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">
+                                <label></label>
+								<input type="text" name="inputSubject" id="inputSubject" class="form-control required" placeholder="Subject">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-md-12">
-								<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>
+								<textarea name="inputMessage" id="inputMessage" rows="6" class="form-control required" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -46,19 +48,22 @@
 							</div>
 						</div>
 					</form>
+                    </div>
             </div><!-- end contact-agent-info -->
             
             <div class="col-sm-6 who-we-are">
                 <h3>Who We Are</h3>
 	                <p>TravelZap is a group vacation service provider, 
-	                specializing in unprecedented combination of savings, 
-	                service, and efficiency for the leisure group travel 
-	                industry. We're known for our cutting edge proprietary 
-	                research and booking technology that creates the best 
-	                value vacation packages for our clients. TravelZap was 
-	                established on a core goal to make the leisure travel 
-	                industry more efficient and to direct the savings back 
-	                to our customers. Visit as at <a href="https://www.travelzap.com/" target="_blank">www.travelzap.com</a></p>
+		                specializing in unprecedented combination of savings, 
+		                service, and efficiency for the leisure group travel 
+		                industry. We're known for our cutting edge proprietary 
+		                research and booking technology that creates the best 
+		                value vacation packages for our clients. TravelZap was 
+		                established on a core goal to make the leisure travel 
+		                industry more efficient and to direct the savings back 
+		                to our customers. Visit as at 
+		                <a href="https://www.travelzap.com/" target="_blank">www.travelzap.com</a>
+	                </p>
 	                
 	                <div class="row travel-zap-logo">
 	                	<div class="col-sm-6 black-bg col-xs-8">
@@ -67,11 +72,17 @@
 	                </div><!-- .row -->
 	                
 	                <div class="row promo">
-	                	<div class="col-xs-6">
-        				 <p><span class="gold">Get $150 off </span>for your next group vacation. Discount code #45454545. </br></br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here. </a></p>
+	                	<div class="col-sm-6">
+        				 <div style="display: {no_discountCss}">
+	        				 <p>Planning your next group vacation?</br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here.</a></p>
+	        			</div>
+        			
+	        			<div style="display: {discountCss}">
+	        				 <p><span class="gold">$150 off</span> for your next group vacation. Discount code #{discount_code}. </br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here.</a></p>
+	        			</div>
         			</div>
 	                	
-	                	<div class="col-xs-6 text-center">
+	                	<div class="col-sm-6 col-xs-8 text-center">
 	                		<img src="assets/img/guarantee.png" />
 	                	</div><!-- .col-xs-6 -->
 	                </div><!-- .row -->

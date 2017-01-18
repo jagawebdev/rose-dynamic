@@ -18,6 +18,7 @@ $(document).ready(function() {
     $(".fancybox").fancybox();
 });
 
+
 /**
 * Window scroll effects
 */

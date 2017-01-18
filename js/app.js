@@ -1,6 +1,6 @@
 /*global angular*/
 
-var app = angular.module("roseTemplate", ["ngRoute"])
+var app = angular.module("lillyTemplate", ["ngRoute"])
                 .config(["$routeProvider", function ($routeProvider) {
                   $routeProvider
                     .when("/landing",
