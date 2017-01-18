@@ -43,7 +43,7 @@ body {
     font-size: 14px;
     min-height: 100%;
     background-color: #f6f6f6;
-    background: url("../assets/img/background/paper_fibers.png");
+    background: url("../assets/img/background/<main_background_img>");
 }
 
 b, strong {
@@ -56,7 +56,7 @@ b, strong {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 // ************************************* //
@@ -155,7 +155,7 @@ ul {
 // ************************************* //
 // 3.0 Hero ========= //
 #hero {
-    background: url("../assets/img/beach2.jpg") center no-repeat;
+    background: url("../assets/img/<background_image>") center no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -787,11 +787,11 @@ iframe {
 }
 
 .para-bottom {
-    margin-bottom: 57px;
+    margin-bottom: 37px;
 }
 
 .para-bottom3 {
-    margin-bottom: 37px;
+    margin-bottom: 17px;
 }
 
 .para-bottom2 {
@@ -889,6 +889,18 @@ iframe {
     .arrow {
         display: none;
     }
+    
+    .para-bottom {
+        margin-bottom: 15px;
+    }
+    
+    .para-bottom2 {
+        margin-bottom: 15px;
+    }
+    
+    .para-bottom3 {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -906,9 +918,13 @@ iframe {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .para-bottom {
+        margin-bottom: 57px;
+    }
+    
     .para-bottom2 {
-        margin-bottom: 37px;
+        margin-bottom: 57px;
     }
     
     .para-bottom3 {
