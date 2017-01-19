@@ -474,6 +474,9 @@ b, strong {
 .container {
   max-width: 1000px; }
 
+.colored-div {
+  background-color: #f6f6f6; }
+
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
   color: #af9258;
