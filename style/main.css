@@ -805,10 +805,11 @@ footer a {
 .price-match-sm {
   margin-bottom: 5px;
   margin-left: 1px;
-  font-size: 13px;
+  font-size: 14px;
   background-color: #af9258;
   color: white;
-  padding: 4px 5px 3px; }
+  padding: 4px 5px 3px;
+  z-index: 200; }
   .price-match-sm:hover {
     cursor: pointer; }
 
