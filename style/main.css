@@ -826,7 +826,8 @@ footer a {
   padding: 1px 5px 0; }
 
 .learn-more {
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding: 0 11px 0 10px; }
 
 #price-match-content-sm {
   padding: 5px 10px 0;
