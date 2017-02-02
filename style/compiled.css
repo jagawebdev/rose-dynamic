@@ -636,7 +636,9 @@ ul {
   display: inline-block;
   width: 45px;
   margin: auto;
-  color: #82a986; }
+  color: #82a986;
+  padding-top: 15px;
+  padding-left: 10px; }
 
 .ion-heart1 {
   color: #ffc0cb; }
