@@ -7,6 +7,9 @@ $agentname = '{full_name_user}';
 $agentphone = '{phone_work_user}';
 $agentemail = '{assigned_user_email}';
 $booklink = '{website}/booknow.html';
+$leaderemail = '{clientlogin}';
+$dashboard = '{has_dashboard}';
+
 
 $errors         = array();  	// array to hold validation errors 
 $data 			= array(); 		// array to pass back data
@@ -91,7 +94,10 @@ $data 			= array(); 		// array to pass back data
 		// show a message of success and provide a true success variable
 		$data['success'] = true;
 		$data['message'] = 'Thank you!';
-	}
+        
+        // add to wedding dashboard RSVP section
+        require_once("dashRSVP.php");   
+    }
 
 	// return all our data to an AJAX call
 	echo json_encode($data);

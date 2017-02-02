@@ -5,6 +5,7 @@ $(window).ready(function() {
     $('#loading').hide();
 });
 
+
 $(document).ready(function() {
    /**
    * Drop Down Menu
@@ -17,7 +18,7 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
-    
+
     /**
     * Fancybox
     */
@@ -28,7 +29,7 @@ $(document).ready(function() {
 /**
 * Window scroll effects
 */
-$(window).scroll(function(){   
+$(window).scroll(function(){
     /**
     * Menu show after scroll
     */
@@ -37,22 +38,30 @@ $(window).scroll(function(){
     } else {
         $('#menu').fadeOut(400);
     }
-    
+
     /**
     * Scroll slow effect to #packages
     */
     $("#to-top").click(function() {
-        $('html, body').animate({
+        $('html:not(:animated),body:not(:animated)').animate({
             scrollTop: $("#packages").offset().top
         }, 2000);
+        return false;
+        $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
     });
-    
+    });
+
     /**
     * Scroll slow effect to #booking
     */
     $(".scroll-to").click(function() {
-        $('html, body').animate({
+        $('html:not(:animated),body:not(:animated)').animate({
             scrollTop: $("#booking").offset().top
         }, 2000);
+        return false;
+        $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+        });
     });
 });

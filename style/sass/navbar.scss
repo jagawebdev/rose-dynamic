@@ -1,107 +1,133 @@
 @import "colors.scss";
+/*================================================= */
+/* NAVIGATION SECTION ============================ */
 
 header {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    z-index: 200;
-    padding: 15px 0 15px 0;
-    font-weight: 100px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  z-index: 200;
+  padding: 30px 0 15px 0;
+  font-weight: 100px;
 }
 
 #menu {
-    position: fixed;
-	top: 0px;
-	width: 100%; 
-	background-color: white;
-	border-bottom: solid 1px $main-color;
-	color: $main-color;
-	z-index: 9999;
-	padding: 15px 0 0 0;
-	display: none;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px $main-color;
+  color: $main-color;
+  z-index: 9999;
+  padding: 15px 0 0 0;
+  display: none;
 }
 
 .navigation {
-    display: block;
-    position: relative;
-    margin: auto;
-    color: $main-color;
-    text-align: center;
-    a {
-        color: $main-color;
-        text-decoration: none;
-        letter-spacing: 1px;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  display: block;
+  position: relative;
+  margin: auto;
+  color: $main-color;
+  text-align: center;
+}
+.navigation a {
+  color: $main-color;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.navigation a:hover {
+  text-decoration: underline;
 }
 
 .navigation-list {
-    position: relative;
-    display: block;
-    text-align: center;
-    ul {
-        list-style: none;
-        li {
-            display: inline-block;
-            text-transform: uppercase;
-            padding-right: 25px;
-        }
-        li:last-child {
-                padding: 0 0;
-        }
-    }
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.navigation-list ul {
+  list-style: none;
+}
+.navigation-list ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+.navigation-list ul li:last-child {
+  padding: 0 0;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    border: solid 1px $main-color;
+}
+
+.navigation-list .dropdown-menu li {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: none;
+}
+
+
 .hamburger {
-    display: none;
-    color: $main-color;
-    line-height: 0px;
-    z-index: 300;
-    &:hover {
-        cursor: pointer;
-    }
+  display: none;
+  color: $main-color;
+  line-height: 0px;
+  z-index: 300;
+}
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .drop-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 21px;
-    text-align: center;
-    z-index: 200;
-    background-color: white;
-    ul {
-        list-style:none;
-        padding-left: 0;
-        li {
-            padding-top: 20px ;
-        }
-        a {
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: $main-color;
-            &:hover {
-                color: $main-color;
-            }
-        }
-    }
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 21px;
+  text-align: center;
+  z-index: 200;
+  background-color: white;
+}
+.drop-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.drop-menu ul li {
+  padding-top: 20px;
+}
+.drop-menu ul a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+.drop-menu ul a:hover {
+  color: $main-color;
 }
 
 @media screen and (max-width: 770px) {
-    .navigation {
-        width: 100%;
-        .navigation-list {
-            display: none;
-        }
+  .navigation {
+    width: 100%;
+  }
+  .navigation .navigation-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    z-index: 300;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+    .dropdown:hover .dropdown-menu {
+        display: none;
     }
-    
-    .hamburger {
-        display: inline-block;
-        z-index: 300;
+    .caret {
+        display: none;
     }
 }

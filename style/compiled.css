@@ -364,12 +364,14 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/*================================================= */
+/* NAVIGATION SECTION ============================ */
 header {
   display: block;
   width: 100%;
   font-size: 14px;
   z-index: 200;
-  padding: 15px 0 15px 0;
+  padding: 30px 0 15px 0;
   font-weight: 100px; }
 
 #menu {
@@ -377,8 +379,8 @@ header {
   top: 0px;
   width: 100%;
   background-color: white;
-  border-bottom: solid 1px #af9258;
-  color: #af9258;
+  border-bottom: solid 1px #82a986;
+  color: #82a986;
   z-index: 9999;
   padding: 15px 0 0 0;
   display: none; }
@@ -387,35 +389,52 @@ header {
   display: block;
   position: relative;
   margin: auto;
-  color: #af9258;
+  color: #82a986;
   text-align: center; }
-  .navigation a {
-    color: #af9258;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .navigation a:hover {
-      text-decoration: underline; }
+
+.navigation a {
+  color: #82a986;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+.navigation a:hover {
+  text-decoration: underline; }
 
 .navigation-list {
   position: relative;
   display: block;
   text-align: center; }
-  .navigation-list ul {
-    list-style: none; }
-    .navigation-list ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding-right: 25px; }
-    .navigation-list ul li:last-child {
-      padding: 0 0; }
+
+.navigation-list ul {
+  list-style: none; }
+
+.navigation-list ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 25px; }
+
+.navigation-list ul li:last-child {
+  padding: 0 0; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin-top: 0;
+  border: solid 1px #82a986; }
+
+.navigation-list .dropdown-menu li {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-transform: none; }
 
 .hamburger {
   display: none;
-  color: #af9258;
+  color: #82a986;
   line-height: 0px;
   z-index: 300; }
-  .hamburger:hover {
-    cursor: pointer; }
+
+.hamburger:hover {
+  cursor: pointer; }
 
 .drop-menu {
   display: none;
@@ -427,28 +446,64 @@ header {
   text-align: center;
   z-index: 200;
   background-color: white; }
-  .drop-menu ul {
-    list-style: none;
-    padding-left: 0; }
-    .drop-menu ul li {
-      padding-top: 20px; }
-    .drop-menu ul a {
-      text-decoration: none;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #af9258; }
-      .drop-menu ul a:hover {
-        color: #af9258; }
+
+.drop-menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+.drop-menu ul li {
+  padding-top: 20px; }
+
+.drop-menu ul a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #82a986; }
+
+.drop-menu ul a:hover {
+  color: #82a986; }
 
 @media screen and (max-width: 770px) {
   .navigation {
     width: 100%; }
-    .navigation .navigation-list {
-      display: none; }
+
+  .navigation .navigation-list {
+    display: none; }
 
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+@media screen and (max-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: none; }
+
+  .caret {
+    display: none; } }
+/* 1.0 General ========= */
+/* 2.0 Global ========= */
+/* 3.0 Hero ========= */
+/* 3.1 Count-Down ========= */
+/* 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= */
+/* 4.0 RSVP MODAL ========= */
+/* 5.0 FOOTER ========= */
+/* 5.1 FIXED FOOTER ========= */
+/* 5.2 FIXED FOOTER FOR SMALL VIEW ========= */
+/* 6.0 FAQ PAGE ======= */
+/* 7.0 CONTACT PAGE ======= */
+/* 8.0 WEDDING PAGE ======= */
+/* 8.1 GALLERY ======= */
+/* 8.2 STORY LINE ======= */
+/* 8.3 BRIDESMAIDS AND GROOMSMEN ======= */
+/* 8.4 REGISTERY ======= */
+/* 8.5 GUEST LIST ======= */
+/* 8.6 HASHTAG ======= */
+/* 9.0 DESTINATION PAGE ======= */
+/* 9.1 PACKAGE INFORMATION ======= */
+/* 9.2 ADDITIONAL INFORMATION ======= */
+/* 9.3 BOOKING ======= */
+/*  10.0 Pulse Keyframe========= */
+/* ************************************* */
+/* 1.0 General ========= */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -483,9 +538,11 @@ b, strong {
 .colored-div {
   background-color: #f6f6f6; }
 
+/* ************************************* */
+/* 2.0 Global ========= */
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
-  color: #af9258;
+  color: #82a986;
   font-size: 35px; }
 
 .first-p {
@@ -494,17 +551,18 @@ h1, h2, h3 {
 button {
   position: relative;
   text-transform: uppercase;
-  border: solid 1px #af9258;
+  border: solid 1px #82a986;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
   padding: 3px 10px 1px 10px;
   background-color: rgba(255, 255, 255, 0);
-  color: #af9258;
+  color: #82a986;
   margin-bottom: 3px; }
-  button:hover {
-    color: white;
-    background-color: #af9258; }
+
+button:hover {
+  color: white;
+  background-color: #82a986; }
 
 button:focus {
   outline: 0; }
@@ -513,7 +571,7 @@ button:focus {
   font-weight: bold; }
 
 .gold {
-  color: #af9258; }
+  color: #82a986; }
 
 .div-nav-space {
   margin-top: 120px; }
@@ -556,22 +614,36 @@ ul {
   width: 200px;
   margin: auto; }
 
+/* ************************************* */
+/* 3.0 Hero ========= */
 #hero {
   background: url("../assets/img/<background_image>") center no-repeat;
   background-size: cover;
   width: 100%;
   height: auto;
   font-family: 'Great Vibes', cursive;
-  color: #af9258;
+  color: #82a986;
   padding: 50px 0; }
 
 .names {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 50px 20px; }
+
+.tint {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.ion-heart {
+  font-size: 50px;
+  display: inline-block;
+  width: 45px;
+  margin: auto;
+  color: #82a986; }
+
+.ion-heart1 {
+  color: #ffc0cb; }
 
 .couple-name {
   font-family: 'Great Vibes', cursive;
-  color: #af9258;
+  color: #82a986;
   font-size: 60px;
   margin-bottom: 0px; }
 
@@ -579,14 +651,16 @@ ul {
   font-size: 24px;
   margin-bottom: 15px; }
 
+/* ************************************* */
+/* 3.1 COUNT DOWN ========= */
 #count-down {
   padding: 40px 0 0 0;
   font-family: 'Great Vibes', cursive;
-  color: #af9258; }
+  color: #82a986; }
 
 #count-down .label {
   font-family: 'Raleway', Helvetica, sans-serif;
-  color: #af9258;
+  color: #82a986;
   font-size: 12px;
   font-weight: 100;
   text-transform: uppercase; }
@@ -594,6 +668,8 @@ ul {
 #count-down .number {
   font-size: 40px; }
 
+/* ************************************* */
+/* 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= */
 #samples-page section:nth-child(odd) {
   background: #f6f6f6; }
 
@@ -603,6 +679,8 @@ ul {
 .sample-info-text {
   padding: 20px 0; }
 
+/* ************************************* */
+/* 4.0 RSVP MODAL ========= */
 #rsvpModal, #guestList {
   margin-top: 80px; }
 
@@ -617,7 +695,7 @@ label {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #af9258; }
+  color: #82a986; }
 
 .form-group textarea, .form-group input {
   background-color: transparent; }
@@ -630,7 +708,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: solid 1px #af9258;
+  border: solid 1px #82a986;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -641,23 +719,24 @@ textarea {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="phone"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    border: solid 1px #af9258; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border: solid 1px #82a986; }
 
 .close-button {
   font-size: 80px;
-  color: #af9258;
+  color: #82a986;
   font-weight: 100;
   line-height: 25px; }
 
 .form-control {
-  border: #af9258 1px solid;
+  border: #82a986 1px solid;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -667,37 +746,44 @@ textarea {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
-  .form-control:focus {
-    border: solid 1px #af9258; }
 
+.form-control:focus {
+  border: solid 1px #82a986; }
+
+/* ************************************* */
+/* 5.0 FOOTER ========= */
 footer {
-  border-top: solid 1px #af9258;
+  border-top: solid 1px #82a986;
   padding: 30px 0;
   color: black !important;
   font-size: 12px; }
 
 footer h5, footer h4 {
-  color: #af9258; }
+  color: #82a986; }
 
 footer a {
-  color: #af9258;
+  color: #82a986;
   text-decoration: underline; }
-  footer a:hover {
-    color: #af9258; }
+
+footer a:hover {
+  color: #82a986; }
 
 .social-list ul a {
   color: white;
   font-size: 15px;
-  border: solid 1px #af9258;
+  border: solid 1px #82a986;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 6px 12px 4px;
-  background-color: #af9258; }
-  .social-list ul a:hover {
-    background-color: transparent;
-    color: #af9258; }
+  background-color: #82a986; }
 
+.social-list ul a:hover {
+  background-color: transparent;
+  color: #82a986; }
+
+/* ************************************* */
+/* 5.1 FIXED FOOTER ========= */
 #fixed-footer {
   display: inline-block !important;
   position: fixed;
@@ -705,17 +791,20 @@ footer a {
   right: 0;
   float: right;
   margin: auto 15px 15px auto; }
-  #fixed-footer h6 {
-    color: #af9258; }
-  #fixed-footer a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #fixed-footer a:hover {
-      color: black; }
+
+#fixed-footer h6 {
+  color: #82a986; }
+
+#fixed-footer a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#fixed-footer a:hover {
+  color: black; }
 
 .agent-cta {
-  border: #af9258 1px solid;
+  border: #82a986 1px solid;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -723,7 +812,7 @@ footer a {
 
 .agent-cta-title {
   width: 100%;
-  background-color: #af9258;
+  background-color: #82a986;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -748,12 +837,14 @@ footer a {
   margin: auto;
   margin-bottom: 5px;
   font-size: 13px; }
-  .price-match:hover {
-    cursor: pointer; }
-  .price-match img {
-    width: 130px;
-    margin: auto;
-    display: block; }
+
+.price-match:hover {
+  cursor: pointer; }
+
+.price-match img {
+  width: 130px;
+  margin: auto;
+  display: block; }
 
 .price-match .title1 {
   font-size: 25px;
@@ -767,7 +858,7 @@ footer a {
   text-transform: uppercase; }
 
 .price-match .title3 {
-  background-color: #af9258;
+  background-color: #82a986;
   color: white;
   line-height: 0px;
   padding: 2px 16px;
@@ -785,29 +876,33 @@ footer a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  border: #af9258 1px solid; }
+  border: #82a986 1px solid; }
 
+/* ************************************* */
+/* 5.2 FIXED FOOTER FOR SMALL VIEW ========= */
 #fixed-footer-sm {
   display: inline-block !important;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0; }
-  #fixed-footer-sm a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #fixed-footer-sm a:hover {
-      color: black; }
+
+#fixed-footer-sm a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#fixed-footer-sm a:hover {
+  color: black; }
 
 .agent-cta-sm {
-  border: #af9258 1px solid;
+  border: #82a986 1px solid;
   background-color: white;
   padding-top: 8px; }
 
 .agent-cta-title-sm {
   width: 35px;
-  background-color: #af9258;
+  background-color: #82a986;
   color: white;
   padding: 3px 5px; }
 
@@ -815,12 +910,14 @@ footer a {
   margin-bottom: 5px;
   margin-left: 1px;
   font-size: 14px;
-  background-color: #af9258;
-  color: white;
+  background-color: #82a986;
+  color: white !important;
   padding: 4px 5px 3px;
-  z-index: 200; }
-  .price-match-sm:hover {
-    cursor: pointer; }
+  z-index: 200;
+  text-decoration: none !important; }
+
+.price-match-sm:hover {
+  cursor: pointer; }
 
 .price-match-button {
   padding: 1px 5px 0; }
@@ -835,23 +932,29 @@ footer a {
   height: auto;
   background-color: white;
   color: black;
-  border: #af9258 1px solid; }
+  border: #82a986 1px solid; }
 
+/* ************************************* */
+/* 6.0 FAQ PAGE ========= */
 .faq-content h5 {
-  color: #af9258; }
+  color: #82a986; }
 
 .faq-content p {
   margin-bottom: 30px; }
 
+/* ************************************* */
+/*  7.0 CONTACT PAGE ========= */
 #contact {
   margin-bottom: 50px;
   padding: 0 15px; }
-  #contact a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #contact a:hover {
-      color: black; }
+
+#contact a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#contact a:hover {
+  color: black; }
 
 .contact-agent-info {
   background-color: #f6f6f6;
@@ -865,14 +968,17 @@ footer a {
   background-color: white;
   margin-top: 30px;
   padding-top: 10px; }
-  .promo a {
-    color: #af9258 !important;
-    text-decoration: underline;
-    cursor: pointer; }
-    .promo a:hover {
-      color: #af9258; }
-  .promo img {
-    max-width: 150px; }
+
+.promo a {
+  color: #82a986 !important;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.promo a:hover {
+  color: #82a986; }
+
+.promo img {
+  max-width: 150px; }
 
 .black-bg img {
   background-color: black;
@@ -882,6 +988,8 @@ footer a {
   margin-top: 30px;
   max-width: 400px; }
 
+/* ************************************* */
+/*  8.0 WEDDING PAGE ========= */
 #wedding-page section:nth-child(odd) {
   background: #f6f6f6; }
 
@@ -890,6 +998,8 @@ footer a {
   margin-bottom: 0;
   line-height: 50px; }
 
+/* ************************************* */
+/*  8.1 GALLERY ========= */
 .image-list {
   display: inline-block; }
 
@@ -925,14 +1035,18 @@ footer a {
   text-align: center;
   padding: 5px; }
 
+/* ************************************* */
+/*  8.2 STORY LINE========= */
 #couple-story button {
   margin-top: 10px; }
 
 .fade {
   opacity: 0.5; }
 
+/* ************************************* */
+/*  8.3 BRIDESMAIDS AND GROOMSMEN========= */
 #maids-grooms h4 {
-  color: #af9258; }
+  color: #82a986; }
 
 #maids-grooms .row-space {
   padding: 15px 0; }
@@ -953,17 +1067,24 @@ footer a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+/* ************************************* */
+/*  8.5 GUEST LIST========= */
 iframe {
   border: none; }
 
+/* ************************************* */
+/*   8.6 HASHTAG========= */
 .hashtag {
   font-size: 24px; }
 
+/* ************************************* */
+/*   9.0 DESTINATION PAGE========= */
 #destination-page section:nth-child(even) {
   background: #f6f6f6; }
 
 #destination h1 {
   margin-bottom: 0; }
+
 #destination h4 {
   margin-top: 5px; }
 
@@ -985,15 +1106,19 @@ iframe {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  outline: 1px solid #af9258;
+  outline: 1px solid #82a986;
   outline-offset: -15px; }
 
+/* ************************************* */
+/*   9.1 PACKAGE INFORMATION========= */
 #packages {
   background-color: #f6f6f6; }
-  #packages h1 {
-    margin-bottom: 10px; }
-  #packages .white {
-    border: solid 10px #f6f6f6; }
+
+#packages h1 {
+  margin-bottom: 10px; }
+
+#packages .white {
+  border: solid 10px #f6f6f6; }
 
 .space {
   margin-top: 20px; }
@@ -1001,15 +1126,16 @@ iframe {
 .ion-arrow-up-c {
   color: white;
   font-size: 20px;
-  border: solid 1px #af9258;
+  border: solid 1px #82a986;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   padding: 0px 6px 0px;
-  background-color: #af9258; }
-  .ion-arrow-up-c:hover {
-    background-color: transparent;
-    color: #af9258; }
+  background-color: #82a986; }
+
+.ion-arrow-up-c:hover {
+  background-color: transparent;
+  color: #82a986; }
 
 .jrow-centered {
   text-align: center;
@@ -1024,6 +1150,14 @@ iframe {
   -webkit-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75); }
+
+.horizontal-package {
+  margin: 15px 10px 0 10px;
+  padding: 15px 10px;
+  background-color: white;
+  -webkit-box-shadow: -5px 10px 35px -7px #949494;
+  -moz-box-shadow: -5px 10px 35px -7px #949494;
+  box-shadow: -5px 10px 35px -7px #949494; }
 
 .package-well-img {
   background-color: white;
@@ -1050,13 +1184,24 @@ iframe {
   font-size: 20px;
   color: black; }
 
+/* ************************************* */
+/*   9.2 additional INFORMATION========= */
+#additional_info {
+  background-color: #f6f6f6; }
+
+/* ************************************* */
+/*   9.3 BOOKING INFORMATION========= */
+#booking {
+  background-color: #f6f6f6; }
+
 .booking-well {
-  background-color: #f6f6f6;
+  background-color: white;
   padding: 15px;
-  border: solid 10px white; }
-  .booking-well .booking-number {
-    text-transform: uppercase;
-    color: #af9258; }
+  border: solid 10px #f6f6f6; }
+
+.booking-well .booking-number {
+  text-transform: uppercase;
+  color: #82a986; }
 
 .para-bottom {
   margin-bottom: 57px; }
@@ -1067,10 +1212,8 @@ iframe {
 .para-bottom2 {
   margin-bottom: 37px; }
 
-#payment {
-  background-color: #f6f6f6; }
-  #payment button {
-    margin-left: 10px; }
+#payment button {
+  margin-left: 10px; }
 
 @media (min-width: 769px) and (max-width: 1012px) {
   .couple-name {
@@ -1088,8 +1231,9 @@ iframe {
 
   #count-down {
     padding: 20px 0 10px 0; }
-    #count-down .col-xs-2 {
-      padding: 0; }
+
+  #count-down .col-xs-2 {
+    padding: 0; }
 
   #count-down .label {
     font-size: 9px; }
@@ -1124,7 +1268,7 @@ iframe {
     width: 100%; }
 
   .booking-well {
-    border: solid 10px white;
+    border: solid 10px #f6f6f6;
     width: 100%; }
 
   #booking .row {
@@ -1173,5 +1317,17 @@ iframe {
 @media screen and (max-width: 360px) {
   .pthumbnail {
     height: 120px; } }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.3, 1.3, 1.3); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+.pulse {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: both; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=compiled.css.map */

@@ -1,9 +1,11 @@
+/*================================================= */
+/* NAVIGATION SECTION ============================ */
 header {
   display: block;
   width: 100%;
   font-size: 14px;
   z-index: 200;
-  padding: 15px 0 15px 0;
+  padding: 30px 0 15px 0;
   font-weight: 100px; }
 
 #menu {
@@ -11,8 +13,8 @@ header {
   top: 0px;
   width: 100%;
   background-color: white;
-  border-bottom: solid 1px #af9258;
-  color: #af9258;
+  border-bottom: solid 1px #82a986;
+  color: #82a986;
   z-index: 9999;
   padding: 15px 0 0 0;
   display: none; }
@@ -21,35 +23,52 @@ header {
   display: block;
   position: relative;
   margin: auto;
-  color: #af9258;
+  color: #82a986;
   text-align: center; }
-  .navigation a {
-    color: #af9258;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .navigation a:hover {
-      text-decoration: underline; }
+
+.navigation a {
+  color: #82a986;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+.navigation a:hover {
+  text-decoration: underline; }
 
 .navigation-list {
   position: relative;
   display: block;
   text-align: center; }
-  .navigation-list ul {
-    list-style: none; }
-    .navigation-list ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding-right: 25px; }
-    .navigation-list ul li:last-child {
-      padding: 0 0; }
+
+.navigation-list ul {
+  list-style: none; }
+
+.navigation-list ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 25px; }
+
+.navigation-list ul li:last-child {
+  padding: 0 0; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin-top: 0;
+  border: solid 1px #82a986; }
+
+.navigation-list .dropdown-menu li {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-transform: none; }
 
 .hamburger {
   display: none;
-  color: #af9258;
+  color: #82a986;
   line-height: 0px;
   z-index: 300; }
-  .hamburger:hover {
-    cursor: pointer; }
+
+.hamburger:hover {
+  cursor: pointer; }
 
 .drop-menu {
   display: none;
@@ -61,27 +80,38 @@ header {
   text-align: center;
   z-index: 200;
   background-color: white; }
-  .drop-menu ul {
-    list-style: none;
-    padding-left: 0; }
-    .drop-menu ul li {
-      padding-top: 20px; }
-    .drop-menu ul a {
-      text-decoration: none;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #af9258; }
-      .drop-menu ul a:hover {
-        color: #af9258; }
+
+.drop-menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+.drop-menu ul li {
+  padding-top: 20px; }
+
+.drop-menu ul a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #82a986; }
+
+.drop-menu ul a:hover {
+  color: #82a986; }
 
 @media screen and (max-width: 770px) {
   .navigation {
     width: 100%; }
-    .navigation .navigation-list {
-      display: none; }
+
+  .navigation .navigation-list {
+    display: none; }
 
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+@media screen and (max-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: none; }
+
+  .caret {
+    display: none; } }
 
 /*# sourceMappingURL=navbar.css.map */
